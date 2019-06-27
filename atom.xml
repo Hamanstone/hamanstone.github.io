@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>九淘的記事本</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-06-26T03:23:53.776Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Stone Sun</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Theme.md</title>
+    <link href="http://yoursite.com/2019/06/26/Theme/"/>
+    <id>http://yoursite.com/2019/06/26/Theme/</id>
+    <published>2019-06-26T03:23:33.000Z</published>
+    <updated>2019-06-26T03:23:53.776Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://github.com/iissnan/hexo-theme-next&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/iissnan/hexo-theme-next&lt;/a&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>PUMA7 Note</title>
+    <link href="http://yoursite.com/2019/06/26/puma7-note/"/>
+    <id>http://yoursite.com/2019/06/26/puma7-note/</id>
+    <published>2019-06-26T02:23:41.000Z</published>
+    <updated>2019-06-26T11:29:04.869Z</updated>
+    
+    <content type="html"><![CDATA[<img src="https://www.intel.com.tw/content/dam/www/public/us/en/images/iot/16x9/smart-home-hpa-calendar-16x9.jpg.rendition.intel.web.720.405.jpg" class="[class names]" title="智慧家庭的解決方案，就從Intel Inside® 開始"><a id="more"></a><h3 id="Server-相關資訊"><a href="#Server-相關資訊" class="headerlink" title="Server 相關資訊"></a>Server 相關資訊</h3><h4 id="Build-server-相關資訊"><a href="#Build-server-相關資訊" class="headerlink" title="Build server 相關資訊"></a>Build server 相關資訊</h4><table><thead><tr><th>Item</th><th>Detail</th></tr></thead><tbody><tr><td>Server IP</td><td>10.255.203.8</td></tr><tr><td>Username</td><td>patron_ssun</td></tr><tr><td>Password</td><td>pega#1234</td></tr></tbody></table><h4 id="Gerrit-相關資訊"><a href="#Gerrit-相關資訊" class="headerlink" title="Gerrit 相關資訊"></a>Gerrit 相關資訊</h4><table><thead><tr><th>Item</th><th>Detail</th></tr></thead><tbody><tr><td>Server IP</td><td><a href="https://extrepo.arrisi.com/" target="_blank" rel="noopener">https://extrepo.arrisi.com/</a></td></tr><tr><td>Username</td><td>ssun</td></tr><tr><td>Password</td><td>pega#1234</td></tr></tbody></table><h4 id="CLM-相關資訊"><a href="#CLM-相關資訊" class="headerlink" title="CLM 相關資訊"></a>CLM 相關資訊</h4><table><thead><tr><th>Item</th><th>Detail</th></tr></thead><tbody><tr><td>Server IP</td><td><a href="https://clm.arrisi.com/" target="_blank" rel="noopener">https://clm.arrisi.com/</a></td></tr><tr><td>Username</td><td>patron_ssun</td></tr><tr><td>Password</td><td>haman@37380</td></tr></tbody></table><h4 id="Build-Server-相關操作"><a href="#Build-Server-相關操作" class="headerlink" title="Build Server 相關操作"></a>Build Server 相關操作</h4><h5 id="專案創建指令"><a href="#專案創建指令" class="headerlink" title="專案創建指令"></a>專案創建指令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> base                  # 快速切換到專案資料夾根目錄</span><br><span class="line"><span class="meta">$</span> mkdir [workspaceName] # 建立一個workspace資料夾</span><br><span class="line"><span class="meta">$</span> cd [workspaceName]    # 切換至workspace資料夾</span><br><span class="line"><span class="meta">$</span> createWorkspace       # 開始創建專案空間，下載完成後會自動開始Build code.</span><br></pre></td></tr></table></figure><h5 id="專案更新指令"><a href="#專案更新指令" class="headerlink" title="專案更新指令"></a>專案更新指令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> base                  # 快速切換到專案資料夾根目錄</span><br><span class="line"><span class="meta">$</span> cd [workspaceName]    # 切換至workspace資料夾</span><br><span class="line"><span class="meta">$</span> updateWorkspace       # 開始更新專案程式碼，更新完成後會自動開始Build code.</span><br></pre></td></tr></table></figure><h5 id="手動編譯ATOM指令"><a href="#手動編譯ATOM指令" class="headerlink" title="手動編譯ATOM指令"></a>手動編譯ATOM指令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> base                  # 快速切換到專案資料夾根目錄</span><br><span class="line"><span class="meta">$</span> cd [workspaceName]    # 切換至workspace資料夾</span><br><span class="line"><span class="meta">$</span> cd build-arrisatom    # 切換至ATOM資料夾</span><br><span class="line"><span class="meta">$</span> buildBroadbandImage   # 編譯ATOM相關程式碼，image會生成在ATOM對應資料夾底下。</span><br></pre></td></tr></table></figure><h5 id="手動編譯ARM指令"><a href="#手動編譯ARM指令" class="headerlink" title="手動編譯ARM指令"></a>手動編譯ARM指令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> base                  # 快速切換到專案資料夾根目錄</span><br><span class="line"><span class="meta">$</span> cd [workspaceName]    # 切換至workspace資料夾</span><br><span class="line"><span class="meta">$</span> cd build-arrisarm     # 切換至ARM資料夾</span><br><span class="line"><span class="meta">$</span> buildBroadbandImage   # 編譯ARM相關程式碼，image會生成在ARM對應資料夾底下。</span><br></pre></td></tr></table></figure><h5 id="手動編譯特定Module指令"><a href="#手動編譯特定Module指令" class="headerlink" title="手動編譯特定Module指令"></a>手動編譯特定Module指令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> base                  # 快速切換到專案資料夾根目錄</span><br><span class="line"><span class="meta">$</span> cd [workspaceName]    # 切換至workspace資料夾</span><br><span class="line"><span class="meta">$</span> cd build-arrisatom    # 切換至ATOM資料夾</span><br><span class="line"><span class="meta">$</span> listModules           # 列出ATOM相關的Module</span><br><span class="line"><span class="meta">$</span> listArmModules        # 列出ARM相關的Module</span><br><span class="line"><span class="meta">$</span> buildBroadbandImage [ModuleName] # ...</span><br></pre></td></tr></table></figure><h5 id="清除ATOM底下舊的image檔"><a href="#清除ATOM底下舊的image檔" class="headerlink" title="清除ATOM底下舊的image檔"></a>清除ATOM底下舊的image檔</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> base                  # 快速切換到專案資料夾根目錄</span><br><span class="line"><span class="meta">$</span> cd [workspaceName]    # 切換至workspace資料夾</span><br><span class="line"><span class="meta">$</span> cd build-arrisatom    # 切換至ATOM資料夾</span><br><span class="line"><span class="meta">$</span> cleanOldImages        # 清除ATOM底下的image檔</span><br></pre></td></tr></table></figure><h5 id="清除ATOM底下舊的image檔-1"><a href="#清除ATOM底下舊的image檔-1" class="headerlink" title="清除ATOM底下舊的image檔"></a>清除ATOM底下舊的image檔</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> base                  # 快速切換到專案資料夾根目錄</span><br><span class="line"><span class="meta">$</span> cd [workspaceName]    # 切換至workspace資料夾</span><br><span class="line"><span class="meta">$</span> cd build-arrisatom    # 切換至ATOM資料夾</span><br><span class="line"><span class="meta">$</span> cleanOldImages        # 清除ATOM底下的image檔</span><br></pre></td></tr></table></figure><h3 id="image-相關資訊"><a href="#image-相關資訊" class="headerlink" title="image 相關資訊"></a>image 相關資訊</h3><h4 id="路徑及檔名"><a href="#路徑及檔名" class="headerlink" title="路徑及檔名"></a>路徑及檔名</h4><h5 id="ATOM路徑"><a href="#ATOM路徑" class="headerlink" title="ATOM路徑"></a>ATOM路徑</h5><p><code>[WORKSPACE]/build-arrisatom/tmp/deploy/images/arrisatom</code></p><h5 id="ARM路徑"><a href="#ARM路徑" class="headerlink" title="ARM路徑"></a>ARM路徑</h5><p><code>[WORKSPACE]/build-arrisarm/tmp/deploy/images/arrisarm</code></p><h5 id="名稱"><a href="#名稱" class="headerlink" title="名稱"></a>名稱</h5><p><code>AR1.2.X_20190625075546_71.NCS.34XX.mono.arrsimg</code></p><div class="note warning"><p>Notice:<br>image檔只會出現在<span style="background-color: #FF7518; color: #FFF">ARM</span>或<span style="background-color: #FF7518; color: #FFF">ATOM</span>對應的資料夾中。 </p></div><h4 id="image燒錄設定"><a href="#image燒錄設定" class="headerlink" title="image燒錄設定"></a>image燒錄設定</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">[  8] Download&gt; transportp 0</span><br><span class="line">Setting transport protocol to TFTP</span><br><span class="line"></span><br><span class="line">[  9] Download&gt; set</span><br><span class="line"></span><br><span class="line">TFTP saved settings</span><br><span class="line"></span><br><span class="line">Server:                192.168.100.60</span><br><span class="line">Filename:              AR1.2.X_20190625075546_71.NCS.34XX.mono.arrsimg</span><br><span class="line">Secure:                FALSE</span><br><span class="line">Transport Protocol:    TFTP</span><br><span class="line">HW Type DL Protection: ON</span><br><span class="line">HW Mask DL Protection: ON</span><br><span class="line">DL Rev Protection:     ON</span><br><span class="line">DL Header Protection:  ON</span><br></pre></td></tr></table></figure><h3 id="常用路徑對照表"><a href="#常用路徑對照表" class="headerlink" title="常用路徑對照表"></a>常用路徑對照表</h3><table><thead><tr><th>Item</th><th>Path</th></tr></thead><tbody><tr><td>webgui</td><td>[WORKSPACE]/arris-source/arris-mfr-bsp/atom/webgui/www_vod</td></tr><tr><td>ATOM image</td><td>[WORKSPACE]/build-arrisatom/tmp/deploy/images/arrisatom</td></tr><tr><td>ARM image</td><td>[WORKSPACE]/build-arrisarm/tmp/deploy/images/arrisarm</td></tr></tbody></table><div class="note info"><p>Notice:<br>WORKSPACE:/export/arris/workspace/ptron_ssun/tg3442/</p></div>]]></content>
+    
+    <summary type="html">
+    
+      &lt;img src=&quot;https://www.intel.com.tw/content/dam/www/public/us/en/images/iot/16x9/smart-home-hpa-calendar-16x9.jpg.rendition.intel.web.720.405.jpg&quot; class=&quot;[class names]&quot; title=&quot;智慧家庭的解決方案，就從Intel Inside® 開始&quot;&gt;
+    
+    </summary>
+    
+      <category term="PEGATRON" scheme="http://yoursite.com/categories/PEGATRON/"/>
+    
+    
+      <category term="Puma7" scheme="http://yoursite.com/tags/Puma7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/06/26/hello-world/"/>
+    <id>http://yoursite.com/2019/06/26/hello-world/</id>
+    <published>2019-06-26T01:59:34.558Z</published>
+    <updated>2019-06-26T01:59:34.558Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
