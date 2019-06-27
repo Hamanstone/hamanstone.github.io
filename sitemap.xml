@@ -2,37 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2019/06/26/puma7-note/</loc>
+    <loc>http://yoursite.com/categories/index.html</loc>
     
-    <lastmod>2019-06-26T11:29:04.869Z</lastmod>
+    <lastmod>2019-06-27T08:54:47.707Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/tags/index.html</loc>
     
-    <lastmod>2019-06-26T11:27:59.790Z</lastmod>
+    <lastmod>2019-06-27T08:53:44.522Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
+    <loc>http://yoursite.com/2019/06/26/puma7-note/</loc>
     
-    <lastmod>2019-06-26T11:24:24.674Z</lastmod>
+    <lastmod>2019-06-27T08:50:14.407Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/about/index.html</loc>
+    <loc>http://yoursite.com/2019/06/26/puma6-note/</loc>
     
-    <lastmod>2019-06-26T06:55:46.586Z</lastmod>
+    <lastmod>2019-06-26T12:07:19.376Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2019/06/26/Theme/</loc>
     
-    <lastmod>2019-06-26T03:23:53.776Z</lastmod>
+    <lastmod>2019-06-26T12:07:00.465Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2019-06-26T11:33:10.583Z</lastmod>
     
   </url>
   

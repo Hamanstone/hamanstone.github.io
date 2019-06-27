@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
 
 
-  <meta name="keywords" content="Puma7,">
+  <meta name="keywords" content="新手入門,">
 
 
 
@@ -96,14 +96,14 @@
 
 
 
-<meta name="keywords" content="Puma7">
+<meta name="keywords" content="新手入門">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PUMA7 Note">
 <meta property="og:url" content="http://yoursite.com/2019/06/26/puma7-note/index.html">
 <meta property="og:site_name" content="九淘的記事本">
 <meta property="og:locale" content="zh-tw">
 <meta property="og:image" content="https://www.intel.com.tw/content/dam/www/public/us/en/images/iot/16x9/smart-home-hpa-calendar-16x9.jpg.rendition.intel.web.720.405.jpg">
-<meta property="og:updated_time" content="2019-06-26T11:29:04.869Z">
+<meta property="og:updated_time" content="2019-06-27T08:50:14.407Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PUMA7 Note">
 <meta name="twitter:image" content="https://www.intel.com.tw/content/dam/www/public/us/en/images/iot/16x9/smart-home-hpa-calendar-16x9.jpg.rendition.intel.web.720.405.jpg">
@@ -115,7 +115,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: true,
@@ -213,7 +213,7 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
+          <a href="/categories" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
@@ -223,7 +223,7 @@
       
         
         <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
+          <a href="/about" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
@@ -233,7 +233,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+          <a href="/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
@@ -243,7 +243,7 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
+          <a href="/tags" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
@@ -343,6 +343,39 @@
 
                 
                 
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PEGATRON/Puma7/" itemprop="url" rel="index">
+                    <span itemprop="name">Puma7</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Instruction/" itemprop="url" rel="index">
+                    <span itemprop="name">Instruction</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Guide/" itemprop="url" rel="index">
+                    <span itemprop="name">Guide</span>
+                  </a>
+                </span>
+
+                
+                
               
             </span>
           
@@ -437,19 +470,19 @@
 <td>haman@37380</td>
 </tr>
 </tbody></table>
-<h4 id="Build-Server-相關操作"><a href="#Build-Server-相關操作" class="headerlink" title="Build Server 相關操作"></a>Build Server 相關操作</h4><h5 id="專案創建指令"><a href="#專案創建指令" class="headerlink" title="專案創建指令"></a>專案創建指令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> base                  # 快速切換到專案資料夾根目錄</span><br><span class="line"><span class="meta">$</span> mkdir [workspaceName] # 建立一個workspace資料夾</span><br><span class="line"><span class="meta">$</span> cd [workspaceName]    # 切換至workspace資料夾</span><br><span class="line"><span class="meta">$</span> createWorkspace       # 開始創建專案空間，下載完成後會自動開始Build code.</span><br></pre></td></tr></table></figure>
+<h4 id="Build-Server-相關操作"><a href="#Build-Server-相關操作" class="headerlink" title="Build Server 相關操作"></a>Build Server 相關操作</h4><h5 id="專案創建指令"><a href="#專案創建指令" class="headerlink" title="專案創建指令"></a>專案創建指令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> base                  <span class="comment"># 快速切換到專案資料夾根目錄</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> mkdir [workspaceName] <span class="comment"># 建立一個workspace資料夾</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> [workspaceName]    <span class="comment"># 切換至workspace資料夾</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> createWorkspace       <span class="comment"># 開始創建專案空間，下載完成後會自動開始Build code.</span></span></span><br></pre></td></tr></table></figure>
 
-<h5 id="專案更新指令"><a href="#專案更新指令" class="headerlink" title="專案更新指令"></a>專案更新指令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> base                  # 快速切換到專案資料夾根目錄</span><br><span class="line"><span class="meta">$</span> cd [workspaceName]    # 切換至workspace資料夾</span><br><span class="line"><span class="meta">$</span> updateWorkspace       # 開始更新專案程式碼，更新完成後會自動開始Build code.</span><br></pre></td></tr></table></figure>
+<h5 id="專案更新指令"><a href="#專案更新指令" class="headerlink" title="專案更新指令"></a>專案更新指令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> base                  <span class="comment"># 快速切換到專案資料夾根目錄</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> [workspaceName]    <span class="comment"># 切換至workspace資料夾</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> updateWorkspace       <span class="comment"># 開始更新專案程式碼，更新完成後會自動開始Build code.</span></span></span><br></pre></td></tr></table></figure>
 
-<h5 id="手動編譯ATOM指令"><a href="#手動編譯ATOM指令" class="headerlink" title="手動編譯ATOM指令"></a>手動編譯ATOM指令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> base                  # 快速切換到專案資料夾根目錄</span><br><span class="line"><span class="meta">$</span> cd [workspaceName]    # 切換至workspace資料夾</span><br><span class="line"><span class="meta">$</span> cd build-arrisatom    # 切換至ATOM資料夾</span><br><span class="line"><span class="meta">$</span> buildBroadbandImage   # 編譯ATOM相關程式碼，image會生成在ATOM對應資料夾底下。</span><br></pre></td></tr></table></figure>
+<h5 id="手動編譯ATOM指令"><a href="#手動編譯ATOM指令" class="headerlink" title="手動編譯ATOM指令"></a>手動編譯ATOM指令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> base                  <span class="comment"># 快速切換到專案資料夾根目錄</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> [workspaceName]    <span class="comment"># 切換至workspace資料夾</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> build-arrisatom    <span class="comment"># 切換至ATOM資料夾</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> buildBroadbandImage   <span class="comment"># 編譯ATOM相關程式碼，image會生成在ATOM對應資料夾底下。</span></span></span><br></pre></td></tr></table></figure>
 
-<h5 id="手動編譯ARM指令"><a href="#手動編譯ARM指令" class="headerlink" title="手動編譯ARM指令"></a>手動編譯ARM指令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> base                  # 快速切換到專案資料夾根目錄</span><br><span class="line"><span class="meta">$</span> cd [workspaceName]    # 切換至workspace資料夾</span><br><span class="line"><span class="meta">$</span> cd build-arrisarm     # 切換至ARM資料夾</span><br><span class="line"><span class="meta">$</span> buildBroadbandImage   # 編譯ARM相關程式碼，image會生成在ARM對應資料夾底下。</span><br></pre></td></tr></table></figure>
+<h5 id="手動編譯ARM指令"><a href="#手動編譯ARM指令" class="headerlink" title="手動編譯ARM指令"></a>手動編譯ARM指令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> base                  <span class="comment"># 快速切換到專案資料夾根目錄</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> [workspaceName]    <span class="comment"># 切換至workspace資料夾</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> build-arrisarm     <span class="comment"># 切換至ARM資料夾</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> buildBroadbandImage   <span class="comment"># 編譯ARM相關程式碼，image會生成在ARM對應資料夾底下。</span></span></span><br></pre></td></tr></table></figure>
 
-<h5 id="手動編譯特定Module指令"><a href="#手動編譯特定Module指令" class="headerlink" title="手動編譯特定Module指令"></a>手動編譯特定Module指令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> base                  # 快速切換到專案資料夾根目錄</span><br><span class="line"><span class="meta">$</span> cd [workspaceName]    # 切換至workspace資料夾</span><br><span class="line"><span class="meta">$</span> cd build-arrisatom    # 切換至ATOM資料夾</span><br><span class="line"><span class="meta">$</span> listModules           # 列出ATOM相關的Module</span><br><span class="line"><span class="meta">$</span> listArmModules        # 列出ARM相關的Module</span><br><span class="line"><span class="meta">$</span> buildBroadbandImage [ModuleName] # ...</span><br></pre></td></tr></table></figure>
+<h5 id="手動編譯特定Module指令"><a href="#手動編譯特定Module指令" class="headerlink" title="手動編譯特定Module指令"></a>手動編譯特定Module指令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> base                  <span class="comment"># 快速切換到專案資料夾根目錄</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> [workspaceName]    <span class="comment"># 切換至workspace資料夾</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> build-arrisatom    <span class="comment"># 切換至ATOM資料夾</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> listModules           <span class="comment"># 列出ATOM相關的Module</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> listArmModules        <span class="comment"># 列出ARM相關的Module</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> buildBroadbandImage [ModuleName] <span class="comment"># ...</span></span></span><br></pre></td></tr></table></figure>
 
-<h5 id="清除ATOM底下舊的image檔"><a href="#清除ATOM底下舊的image檔" class="headerlink" title="清除ATOM底下舊的image檔"></a>清除ATOM底下舊的image檔</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> base                  # 快速切換到專案資料夾根目錄</span><br><span class="line"><span class="meta">$</span> cd [workspaceName]    # 切換至workspace資料夾</span><br><span class="line"><span class="meta">$</span> cd build-arrisatom    # 切換至ATOM資料夾</span><br><span class="line"><span class="meta">$</span> cleanOldImages        # 清除ATOM底下的image檔</span><br></pre></td></tr></table></figure>
+<h5 id="清除ATOM底下舊的image檔"><a href="#清除ATOM底下舊的image檔" class="headerlink" title="清除ATOM底下舊的image檔"></a>清除ATOM底下舊的image檔</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> base                  <span class="comment"># 快速切換到專案資料夾根目錄</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> [workspaceName]    <span class="comment"># 切換至workspace資料夾</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> build-arrisatom    <span class="comment"># 切換至ATOM資料夾</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> cleanOldImages        <span class="comment"># 清除ATOM底下的image檔</span></span></span><br></pre></td></tr></table></figure>
 
-<h5 id="清除ATOM底下舊的image檔-1"><a href="#清除ATOM底下舊的image檔-1" class="headerlink" title="清除ATOM底下舊的image檔"></a>清除ATOM底下舊的image檔</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> base                  # 快速切換到專案資料夾根目錄</span><br><span class="line"><span class="meta">$</span> cd [workspaceName]    # 切換至workspace資料夾</span><br><span class="line"><span class="meta">$</span> cd build-arrisatom    # 切換至ATOM資料夾</span><br><span class="line"><span class="meta">$</span> cleanOldImages        # 清除ATOM底下的image檔</span><br></pre></td></tr></table></figure>
+<h5 id="清除ATOM底下舊的image檔-1"><a href="#清除ATOM底下舊的image檔-1" class="headerlink" title="清除ATOM底下舊的image檔"></a>清除ATOM底下舊的image檔</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> base                  <span class="comment"># 快速切換到專案資料夾根目錄</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> [workspaceName]    <span class="comment"># 切換至workspace資料夾</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> build-arrisatom    <span class="comment"># 切換至ATOM資料夾</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> cleanOldImages        <span class="comment"># 清除ATOM底下的image檔</span></span></span><br></pre></td></tr></table></figure>
 
 <h3 id="image-相關資訊"><a href="#image-相關資訊" class="headerlink" title="image 相關資訊"></a>image 相關資訊</h3><h4 id="路徑及檔名"><a href="#路徑及檔名" class="headerlink" title="路徑及檔名"></a>路徑及檔名</h4><h5 id="ATOM路徑"><a href="#ATOM路徑" class="headerlink" title="ATOM路徑"></a>ATOM路徑</h5><p><code>[WORKSPACE]/build-arrisatom/tmp/deploy/images/arrisatom</code></p>
 <h5 id="ARM路徑"><a href="#ARM路徑" class="headerlink" title="ARM路徑"></a>ARM路徑</h5><p><code>[WORKSPACE]/build-arrisarm/tmp/deploy/images/arrisarm</code></p>
@@ -457,6 +490,8 @@
 <div class="note warning"><p>Notice:<br>image檔只會出現在<span style="background-color: #FF7518; color: #FFF">ARM</span>或<span style="background-color: #FF7518; color: #FFF">ATOM</span>對應的資料夾中。 </p></div>
 
 <h4 id="image燒錄設定"><a href="#image燒錄設定" class="headerlink" title="image燒錄設定"></a>image燒錄設定</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">[  8] Download&gt; transportp 0</span><br><span class="line">Setting transport protocol to TFTP</span><br><span class="line"></span><br><span class="line">[  9] Download&gt; set</span><br><span class="line"></span><br><span class="line">TFTP saved settings</span><br><span class="line"></span><br><span class="line">Server:                192.168.100.60</span><br><span class="line">Filename:              AR1.2.X_20190625075546_71.NCS.34XX.mono.arrsimg</span><br><span class="line">Secure:                FALSE</span><br><span class="line">Transport Protocol:    TFTP</span><br><span class="line">HW Type DL Protection: ON</span><br><span class="line">HW Mask DL Protection: ON</span><br><span class="line">DL Rev Protection:     ON</span><br><span class="line">DL Header Protection:  ON</span><br></pre></td></tr></table></figure>
+
+<h3 id="Code-commit-and-Review"><a href="#Code-commit-and-Review" class="headerlink" title="Code commit and Review"></a>Code commit and Review</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> tg3442</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="comment"># repo start PD[Number] </span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> repo start PD65224 arris-source/arris-mfr-bsp/atom/webgui/www_vod</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="常用路徑對照表"><a href="#常用路徑對照表" class="headerlink" title="常用路徑對照表"></a>常用路徑對照表</h3><table>
 <thead>
@@ -495,7 +530,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Puma7/" rel="tag"># Puma7</a>
+            <a href="/tags/新手入門/" rel="tag"># 新手入門</a>
           
         </div>
       
@@ -518,8 +553,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/06/26/Theme/" rel="prev" title="Theme.md">
-                Theme.md <i class="fa fa-chevron-right"></i>
+              <a href="/2019/06/26/Theme/" rel="prev" title="Theme">
+                Theme <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -594,8 +629,8 @@
 
           
             <div class="site-state-item site-state-posts">
-              <a href="/archives/">
-                <span class="site-state-item-count">3</span>
+              <a href="/archives">
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">文章</span>
               </a>
             </div>
@@ -606,7 +641,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">分類</span>
               </a>
             </div>
@@ -617,7 +652,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">標籤</span>
               </a>
             </div>
@@ -659,7 +694,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Server-相關資訊"><span class="nav-number">1.</span> <span class="nav-text">Server 相關資訊</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Build-server-相關資訊"><span class="nav-number">1.1.</span> <span class="nav-text">Build server 相關資訊</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Gerrit-相關資訊"><span class="nav-number">1.2.</span> <span class="nav-text">Gerrit 相關資訊</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CLM-相關資訊"><span class="nav-number">1.3.</span> <span class="nav-text">CLM 相關資訊</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Build-Server-相關操作"><span class="nav-number">1.4.</span> <span class="nav-text">Build Server 相關操作</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#專案創建指令"><span class="nav-number">1.4.1.</span> <span class="nav-text">專案創建指令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#專案更新指令"><span class="nav-number">1.4.2.</span> <span class="nav-text">專案更新指令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#手動編譯ATOM指令"><span class="nav-number">1.4.3.</span> <span class="nav-text">手動編譯ATOM指令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#手動編譯ARM指令"><span class="nav-number">1.4.4.</span> <span class="nav-text">手動編譯ARM指令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#手動編譯特定Module指令"><span class="nav-number">1.4.5.</span> <span class="nav-text">手動編譯特定Module指令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#清除ATOM底下舊的image檔"><span class="nav-number">1.4.6.</span> <span class="nav-text">清除ATOM底下舊的image檔</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#清除ATOM底下舊的image檔-1"><span class="nav-number">1.4.7.</span> <span class="nav-text">清除ATOM底下舊的image檔</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#image-相關資訊"><span class="nav-number">2.</span> <span class="nav-text">image 相關資訊</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#路徑及檔名"><span class="nav-number">2.1.</span> <span class="nav-text">路徑及檔名</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#ATOM路徑"><span class="nav-number">2.1.1.</span> <span class="nav-text">ATOM路徑</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#ARM路徑"><span class="nav-number">2.1.2.</span> <span class="nav-text">ARM路徑</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#名稱"><span class="nav-number">2.1.3.</span> <span class="nav-text">名稱</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#image燒錄設定"><span class="nav-number">2.2.</span> <span class="nav-text">image燒錄設定</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用路徑對照表"><span class="nav-number">3.</span> <span class="nav-text">常用路徑對照表</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Server-相關資訊"><span class="nav-number">1.</span> <span class="nav-text">Server 相關資訊</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Build-server-相關資訊"><span class="nav-number">1.1.</span> <span class="nav-text">Build server 相關資訊</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Gerrit-相關資訊"><span class="nav-number">1.2.</span> <span class="nav-text">Gerrit 相關資訊</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CLM-相關資訊"><span class="nav-number">1.3.</span> <span class="nav-text">CLM 相關資訊</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Build-Server-相關操作"><span class="nav-number">1.4.</span> <span class="nav-text">Build Server 相關操作</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#專案創建指令"><span class="nav-number">1.4.1.</span> <span class="nav-text">專案創建指令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#專案更新指令"><span class="nav-number">1.4.2.</span> <span class="nav-text">專案更新指令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#手動編譯ATOM指令"><span class="nav-number">1.4.3.</span> <span class="nav-text">手動編譯ATOM指令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#手動編譯ARM指令"><span class="nav-number">1.4.4.</span> <span class="nav-text">手動編譯ARM指令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#手動編譯特定Module指令"><span class="nav-number">1.4.5.</span> <span class="nav-text">手動編譯特定Module指令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#清除ATOM底下舊的image檔"><span class="nav-number">1.4.6.</span> <span class="nav-text">清除ATOM底下舊的image檔</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#清除ATOM底下舊的image檔-1"><span class="nav-number">1.4.7.</span> <span class="nav-text">清除ATOM底下舊的image檔</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#image-相關資訊"><span class="nav-number">2.</span> <span class="nav-text">image 相關資訊</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#路徑及檔名"><span class="nav-number">2.1.</span> <span class="nav-text">路徑及檔名</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#ATOM路徑"><span class="nav-number">2.1.1.</span> <span class="nav-text">ATOM路徑</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#ARM路徑"><span class="nav-number">2.1.2.</span> <span class="nav-text">ARM路徑</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#名稱"><span class="nav-number">2.1.3.</span> <span class="nav-text">名稱</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#image燒錄設定"><span class="nav-number">2.2.</span> <span class="nav-text">image燒錄設定</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Code-commit-and-Review"><span class="nav-number">3.</span> <span class="nav-text">Code commit and Review</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用路徑對照表"><span class="nav-number">4.</span> <span class="nav-text">常用路徑對照表</span></a></li></ol></div>
             
 
           </div>
@@ -711,6 +746,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
