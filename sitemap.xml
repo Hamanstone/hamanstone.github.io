@@ -2,35 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
+    <loc>http://obsidian.synology.me/2019/06/26/Puma7-note/</loc>
+    
+    <lastmod>2019-07-08T10:13:01.825Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://obsidian.synology.me/2019/07/02/Theme-modification/</loc>
+    
+    <lastmod>2019-07-08T06:44:36.325Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://obsidian.synology.me/about/index.html</loc>
+    
+    <lastmod>2019-07-04T03:37:28.276Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://obsidian.synology.me/2019/06/27/Theme/</loc>
+    
+    <lastmod>2019-07-04T03:20:22.247Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://obsidian.synology.me/2019/06/26/puma6-note/</loc>
+    
+    <lastmod>2019-07-03T09:23:37.900Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://obsidian.synology.me/2019/06/27/Modify-Hexo-theme-next-branch-Pisces-width/</loc>
+    
+    <lastmod>2019-07-01T02:32:34.424Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://obsidian.synology.me/categories/index.html</loc>
     
     <lastmod>2019-06-27T08:54:47.707Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
+    <loc>http://obsidian.synology.me/tags/index.html</loc>
     
     <lastmod>2019-06-27T08:53:44.522Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2019/06/26/Theme/</loc>
-    
-    <lastmod>2019-06-26T12:07:00.465Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/about/index.html</loc>
-    
-    <lastmod>2019-06-26T11:33:10.583Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/06/26/hello-world/</loc>
+    <loc>http://obsidian.synology.me/2019/06/26/hello-world/</loc>
     
     <lastmod>2019-06-26T01:59:34.558Z</lastmod>
     
