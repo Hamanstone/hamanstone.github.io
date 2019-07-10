@@ -377,7 +377,7 @@
                 
               
 
-              <time title="創建時間：2019-07-09 19:53:00 / 修改時間：19:57:08" itemprop="dateCreated datePublished" datetime="2019-07-09T19:53:00+08:00">2019-07-09</time>
+              <time title="創建時間：2019-07-09 19:53:00" itemprop="dateCreated datePublished" datetime="2019-07-09T19:53:00+08:00">2019-07-09</time>
             </span>
           
 
@@ -385,12 +385,34 @@
             
 
             
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新於</span>
+                
+                <time title="修改時間：2019-07-10 09:44:03" itemprop="dateModified" datetime="2019-07-10T09:44:03+08:00">2019-07-10</time>
+              </span>
+            
           
 
           
 
           
             
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">評論數：</span>
+                <a href="/2019/07/09/Link-to-local-article/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/09/Link-to-local-article/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -421,10 +443,18 @@
       
         
           
-            <h1 id="問題"><a href="#問題" class="headerlink" title="問題"></a>問題</h1><p>寫文章的時候，經常需要引用站內的其他文章，此時可以使用Hexo內建的標籤插件（Tag Plugins）中的post_line來實現。</p>
-<h1 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h1><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% post_link slug [title] %&#125;</span><br></pre></td></tr></table></figure>
+            <h1 id="問題"><a href="#問題" class="headerlink" title="問題"></a>問題</h1><p>寫文章的時候，經常需要引用站內的其他文章，此時可以使用Hexo內建的標籤插件（Tag Plugins）中的<code>post_link</code>來實現。</p>
+<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% post_link slug [title] %&#125;</span><br></pre></td></tr></table></figure>
 
-<p>其中slug就是_posts文件夾下需要引用的文章的markdown文件的名字，title可以指定引用的文章需要顯示的名字。</p>
+<p>其中<code>slug</code>就是_posts文件夾下需要引用的文章的<span id="inline-blue">markdown文件名稱</span>，<code>[title]</code>可以指定引用的文章需要顯示的名字。</p>
+<h1 id="範例"><a href="#範例" class="headerlink" title="範例"></a>範例</h1><p>例如，使用Hexo撰寫Blog這篇文章的markdown名稱為Link-to-local-article.md<br>那麼在需要引用時，只要透過下面語法即可加入連結：</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- &#123;% post_link Link-<span class="keyword">to</span>-<span class="keyword">local</span>-article %&#125;</span><br><span class="line">- &#123;% post_link Link-<span class="keyword">to</span>-<span class="keyword">local</span>-article 連結站內文章（替換連結名稱）%&#125;</span><br></pre></td></tr></table></figure>
+
+<p>顯示效果如下：</p>
+<ul>
+<li><a href="/2019/07/09/Link-to-local-article/" title="連結站內文章">連結站內文章</a></li>
+<li><a href="/2019/07/09/Link-to-local-article/" title="可以自行指定連結名稱">可以自行指定連結名稱</a></li>
+</ul>
 
           
         
@@ -544,6 +574,18 @@
 
           
             
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">評論數：</span>
+                <a href="/2019/07/09/SSH-keep-alive/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/09/SSH-keep-alive/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -717,6 +759,18 @@
 
           
             
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">評論數：</span>
+                <a href="/2019/07/09/rmate-on-Sublime-text-3/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/09/rmate-on-Sublime-text-3/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -912,6 +966,18 @@
           
             
             
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">評論數：</span>
+                <a href="/2019/07/02/Theme-modification/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/02/Theme-modification/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1078,6 +1144,18 @@
 
           
             
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">評論數：</span>
+                <a href="/2019/06/27/Modify-Hexo-theme-next-branch-Pisces-width/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/06/27/Modify-Hexo-theme-next-branch-Pisces-width/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -1264,6 +1342,18 @@
 
           
             
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">評論數：</span>
+                <a href="/2019/06/27/Theme/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/06/27/Theme/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -1478,6 +1568,18 @@
           
             
             
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">評論數：</span>
+                <a href="/2019/06/26/puma6-note/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/06/26/puma6-note/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1666,6 +1768,18 @@
           
             
             
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">評論數：</span>
+                <a href="/2019/06/26/Puma7-note/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/06/26/Puma7-note/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1817,6 +1931,18 @@
 
           
             
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">評論數：</span>
+                <a href="/2019/06/26/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/06/26/hello-world/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -2183,6 +2309,21 @@
   
 
   
+  
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://hamanstone.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+
+
+
 
 
 
