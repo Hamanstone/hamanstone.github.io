@@ -94,17 +94,18 @@
 
 
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="問題　　很多時候source code在遠端的server上，要編輯檔案最快的方法就是透過vi來進行。我們都知道vi很強大很方便，但是再怎麼方便也沒有比在自己家方便。於是乎，我們可能就想把檔案抓回本地進行編輯。如果你曾使用FTP之類的工具將檔案下載回來，再使用本地的編輯器修改檔案的經驗，你可能會發現傳檔的效率並不是很好，感覺不像本地儲存那麼直覺，總是會卡卡的。 　　所以我就想說有沒有什麼方式可以用">
+<meta name="keywords" content="rmate,Sublime Text 3">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://obsidian.synology.me/2019/06/26/hello-world/index.html">
+<meta property="og:title" content="從本地編輯遠端文件">
+<meta property="og:url" content="http://obsidian.synology.me/2019/07/09/rmate-on-Sublime-text-3/index.html">
 <meta property="og:site_name" content="九淘的記事本">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="問題　　很多時候source code在遠端的server上，要編輯檔案最快的方法就是透過vi來進行。我們都知道vi很強大很方便，但是再怎麼方便也沒有比在自己家方便。於是乎，我們可能就想把檔案抓回本地進行編輯。如果你曾使用FTP之類的工具將檔案下載回來，再使用本地的編輯器修改檔案的經驗，你可能會發現傳檔的效率並不是很好，感覺不像本地儲存那麼直覺，總是會卡卡的。 　　所以我就想說有沒有什麼方式可以用">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2019-06-26T01:59:34.558Z">
+<meta property="og:updated_time" content="2019-07-09T07:25:16.498Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="從本地編輯遠端文件">
+<meta name="twitter:description" content="問題　　很多時候source code在遠端的server上，要編輯檔案最快的方法就是透過vi來進行。我們都知道vi很強大很方便，但是再怎麼方便也沒有比在自己家方便。於是乎，我們可能就想把檔案抓回本地進行編輯。如果你曾使用FTP之類的工具將檔案下載回來，再使用本地的編輯器修改檔案的經驗，你可能會發現傳檔的效率並不是很好，感覺不像本地儲存那麼直覺，總是會卡卡的。 　　所以我就想說有沒有什麼方式可以用">
 
 
 
@@ -114,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://obsidian.synology.me/2019/06/26/hello-world/">
+  <link rel="canonical" href="http://obsidian.synology.me/2019/07/09/rmate-on-Sublime-text-3/">
 
 
 
@@ -124,7 +125,7 @@
   };
 </script>
 
-  <title>Hello World | 九淘的記事本</title>
+  <title>從本地編輯遠端文件 | 九淘的記事本</title>
   
 
 
@@ -335,7 +336,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://obsidian.synology.me/2019/06/26/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://obsidian.synology.me/2019/07/09/rmate-on-Sublime-text-3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="PEGA拓也哥">
@@ -352,7 +353,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World
+          <h1 class="post-title" itemprop="name headline">從本地編輯遠端文件
 
               
             
@@ -378,12 +379,31 @@
                 
               
 
-              <time title="創建時間：2019-06-26 09:59:34" itemprop="dateCreated datePublished" datetime="2019-06-26T09:59:34+08:00">2019-06-26</time>
+              <time title="創建時間：2019-07-09 14:40:00 / 修改時間：15:25:16" itemprop="dateCreated datePublished" datetime="2019-07-09T14:40:00+08:00">2019-07-09</time>
             </span>
           
 
           
+            
 
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分類於</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Editor/" itemprop="url" rel="index"><span itemprop="name">Editor</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -416,19 +436,26 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <h1 id="問題"><a href="#問題" class="headerlink" title="問題"></a>問題</h1><p>　　很多時候source code在遠端的server上，要編輯檔案最快的方法就是透過vi來進行。我們都知道vi很強大很方便，但是再怎麼方便也沒有比在自己家方便。於是乎，我們可能就想把檔案抓回本地進行編輯。如果你曾使用FTP之類的工具將檔案下載回來，再使用本地的編輯器修改檔案的經驗，你可能會發現傳檔的效率並不是很好，感覺不像本地儲存那麼直覺，總是會卡卡的。</p>
+<p>　　所以我就想說有沒有什麼方式可以用本地的編輯器直接在遠端編輯的工具，找了之後發現還蠻多的，例如Beyond Compare就可以透過SSH的方式連進遠端的伺服器進行檔案的編輯。不過畢竟Beyond Compare並不是一個專業的編輯器，用來比對檔案差異很方便，但是用來當編輯器就實在有點不好意思了。</p>
+<p>　　我常用的編輯器是Sublime Text，所以我就在這上面找看看有哪些適合的套件可以達成遠端編輯的目的。我曾經用過<a href="https://packagecontrol.io/packages/SFTP" target="_blank" rel="noopener">SFTP</a>、<a href="https://packagecontrol.io/packages/FTPSync" target="_blank" rel="noopener">FTPSync</a>這類的外掛插件，不過要嘛不更新了，要不就是商用軟體（要付錢的）。而且我記得設定還挺麻煩的，後來找到一個比較簡單的插件，也就是今天的主角<a href="https://packagecontrol.io/packages/RemoteSubl" target="_blank" rel="noopener">RemoteSubl</a></p>
+<h1 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h1><p>　　其實安裝方式在插件的連結頁面中就已經提到了，但是英文寫的有點多，所以我就用中文來把它縮減一下。要使用這個插件需要把工作分成兩個部份，一個是遠端伺服器，另一個是本地電腦。底下我們就開始動手打造吧。</p>
+<p>　　首先，我們先從本地Sublime Text插件安裝說起。其實要在Sublime Text上安裝<code>RemoteSubl</code>很簡單，直接透過Package Control指令即可輕鬆安裝完成。裝完<code>RemoteSubl</code>插件後，基本上我們在本地端的工作就結束了。</p>
+<blockquote>
+<p><small>如果不曉得怎麼透過Package Control安裝Sublime Text插件，可以上網找找，應該蠻多介紹的，基本上Package Control官網上就有解釋如何<a href="https://packagecontrol.io/installation" target="_blank" rel="noopener">安裝</a>，有空我會再補一篇教學。</small></p>
+</blockquote>
+<p>　　第二步，你得連線到你的遠端機器上，安裝一個叫<code>rmate</code>的script(bash version)，如果安裝過就不用再安裝了，要安裝它其實也很簡單，直接把它抓下來放到你希望的路徑底下，最後變更執行權限後即可。就這樣，沒有其他步驟了。我們把重點放到怎麼使用它吧，讓我們繼續看下去。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -o /usr/local/bin/rmate https://raw.githubusercontent.com/aurora/rmate/master/rmate</span><br><span class="line">sudo chmod +x /usr/local/bin/rmate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h1 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h1><p>　　從你本地的電腦的Terminal中執行底下指令，透過SSH的remote port forwarded機制連線到遠端的伺服器上。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ssh</span> <span class="selector-tag">-R</span> 52698<span class="selector-pseudo">:localhost</span><span class="selector-pseudo">:52698</span> <span class="selector-tag">user</span>@<span class="keyword">example</span>.<span class="keyword">com</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>　　通道建立後，你就可以直接在遠端機器上執行<code>rmate [file]</code>指令，執行後你就可以看到檔案從本地的Sublime Text被開啟了。</p>
+<blockquote>
+<h5>注意：</h5>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p><small>在執行<code>rmate [file]</code>指令前，請先確定你己經將Sublime Text編輯器打開了。不然你會看到<code>connect_to localhost port 52698: failed.</code></small></p>
+</blockquote>
 
       
     </div>
@@ -446,6 +473,36 @@
     <div>
       
         
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  <!-- JS庫 sweetalert 可修改路徑 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+  <p><span>本文標題：</span><a href="/2019/07/09/rmate-on-Sublime-text-3/">從本地編輯遠端文件</a></p>
+  <p><span>文章作者：</span><a href="/about" title="訪問 PEGA拓也哥 的個人部落格">PEGA拓也哥</a></p>
+  <p><span>發佈時間：</span>2019年07月09日 - 14:07:00</p>
+  <p><span>最後更新：</span>2019年07月09日 - 15:07:16</p>
+  <p><span>原始連結：</span><a href="/2019/07/09/rmate-on-Sublime-text-3/" title="從本地編輯遠端文件">http://obsidian.synology.me/2019/07/09/rmate-on-Sublime-text-3/</a>
+    <span class="copy-path" title="點擊複製文章連結"><i class="fa fa-clipboard" data-clipboard-text="http://obsidian.synology.me/2019/07/09/rmate-on-Sublime-text-3/" aria-label="複製成功！"></i></span>
+  </p>
+  <p><span>授權許可：</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW" target="_blank" title="Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)"> 姓名標示-非商業性-相同方式分享 4.0 國際</a></p>
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '複製成功',   
+          html: false,
+          timer: 1000,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
+
 
       
     </div>
@@ -461,6 +518,17 @@
 
     <footer class="post-footer">
       
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/rmate/" rel="tag"># rmate</a>
+          
+            <a href="/tags/Sublime-Text-3/" rel="tag"># Sublime Text 3</a>
+          
+        </div>
+      
 
       
       
@@ -470,14 +538,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/07/02/Theme-modification/" rel="next" title="Next佈景主題自訂配置">
+                <i class="fa fa-chevron-left"></i> Next佈景主題自訂配置
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/06/26/Puma7-note/" rel="prev" title="PUMA7 Note">
-                PUMA7 Note <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/09/SSH-keep-alive/" rel="prev" title="SSH保持連線">
+                SSH保持連線 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -648,7 +720,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-text">Quick Start</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#問題"><span class="nav-text">問題</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安裝"><span class="nav-text">安裝</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用法"><span class="nav-text">用法</span></a></li></ol></div>
             
 
           </div>

@@ -94,13 +94,18 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="九淘的記事本">
-<meta property="og:url" content="http://obsidian.synology.me/categories/PEGATRON/Puma7/index.html">
+  <meta name="description" content="問題從本地編輯遠端文件這篇筆記中，我們己經可以在本地端透過SSH編輯遠端文件了。但是經常出現broken pipe的錯誤訊息，且造成連線中斷，所以我試著加入保持連線的設定，試看看是否可以解決掉經常斷線的問題？  設定 編輯 ~/.ssh/config 文件 加入 ServerAliveInterval 240 及 ServerAliveCountMax 2 兩個設定值。~/.ssh/config1">
+<meta name="keywords" content="rmate">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SSH保持連線">
+<meta property="og:url" content="http://obsidian.synology.me/2019/07/09/SSH-keep-alive/index.html">
 <meta property="og:site_name" content="九淘的記事本">
+<meta property="og:description" content="問題從本地編輯遠端文件這篇筆記中，我們己經可以在本地端透過SSH編輯遠端文件了。但是經常出現broken pipe的錯誤訊息，且造成連線中斷，所以我試著加入保持連線的設定，試看看是否可以解決掉經常斷線的問題？  設定 編輯 ~/.ssh/config 文件 加入 ServerAliveInterval 240 及 ServerAliveCountMax 2 兩個設定值。~/.ssh/config1">
 <meta property="og:locale" content="zh-TW">
+<meta property="og:updated_time" content="2019-07-09T11:51:51.538Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="九淘的記事本">
+<meta name="twitter:title" content="SSH保持連線">
+<meta name="twitter:description" content="問題從本地編輯遠端文件這篇筆記中，我們己經可以在本地端透過SSH編輯遠端文件了。但是經常出現broken pipe的錯誤訊息，且造成連線中斷，所以我試著加入保持連線的設定，試看看是否可以解決掉經常斷線的問題？  設定 編輯 ~/.ssh/config 文件 加入 ServerAliveInterval 240 及 ServerAliveCountMax 2 兩個設定值。~/.ssh/config1">
 
 
 
@@ -110,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://obsidian.synology.me/categories/PEGATRON/Puma7/">
+  <link rel="canonical" href="http://obsidian.synology.me/2019/07/09/SSH-keep-alive/">
 
 
 
@@ -120,7 +125,7 @@
   };
 </script>
 
-  <title>分類: Puma7 | 九淘的記事本</title>
+  <title>SSH保持連線 | 九淘的記事本</title>
   
 
 
@@ -168,7 +173,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -254,7 +259,7 @@
         
         
           
-          <li class="menu-item menu-item-categories menu-item-active">
+          <li class="menu-item menu-item-categories">
 
     
     
@@ -311,83 +316,207 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Puma7<small>分類</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://obsidian.synology.me/2019/07/09/SSH-keep-alive/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="PEGA拓也哥">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/nami_avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="九淘的記事本">
+    </span>
+
+    
+      <header class="post-header">
+
         
-          <a class="post-title-link" href="/2019/06/26/Puma7-note/" itemprop="url">
-            
-              <span itemprop="name">PUMA7 Note</span>
-            
-          </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">SSH保持連線
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-06-26T10:23:41+08:00" content="2019-06-26">
-          06-26
-        </time>
-      </div>
+              
+            
+          </h1>
+        
 
-    </header>
-  </article>
+        <div class="post-meta">
 
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">發表於</span>
+              
+
+              
+                
+              
+
+              <time title="創建時間：2019-07-09 19:36:00 / 修改時間：19:51:51" itemprop="dateCreated datePublished" datetime="2019-07-09T19:36:00+08:00">2019-07-09</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="問題"><a href="#問題" class="headerlink" title="問題"></a>問題</h1><a href="/2019/07/09/rmate-on-Sublime-text-3/" title="從本地編輯遠端文件">從本地編輯遠端文件</a>這篇筆記中，我們己經可以在本地端透過SSH編輯遠端文件了。但是經常出現broken pipe的錯誤訊息，且造成連線中斷，所以我試著加入保持連線的設定，試看看是否可以解決掉經常斷線的問題？
+
+<h1 id="設定"><a href="#設定" class="headerlink" title="設定"></a>設定</h1><ul>
+<li>編輯 <code>~/.ssh/config</code> 文件</li>
+<li>加入 <code>ServerAliveInterval 240</code> 及 <code>ServerAliveCountMax 2</code> 兩個設定值。<figure class="highlight plain"><figcaption><span>~/.ssh/config</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Host 10.255.203.8</span><br><span class="line"> RemoteForward 52698 localhost:52698</span><br><span class="line"> User ptron_ssun</span><br><span class="line"> ServerAliveInterval 240</span><br><span class="line"> ServerAliveCountMax 2</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h1 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h1><p>只需要在<span id="inline-blue">Terminal</span>下執行 <code>ssh 10.255.203.8</code> 即可進行連線。</p>
 
       
     </div>
 
+    
+      
+
+
+    
+
+    
+    
+    
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/rmate/" rel="tag"># rmate</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/09/rmate-on-Sublime-text-3/" rel="next" title="從本地編輯遠端文件">
+                <i class="fa fa-chevron-left"></i> 從本地編輯遠端文件
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/09/Link-to-local-article/" rel="prev" title="連結站內文章">
+                連結站內文章 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -407,8 +536,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            本站概要
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -513,6 +651,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#問題"><span class="nav-text">問題</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#設定"><span class="nav-text">設定</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用法"><span class="nav-text">用法</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -645,6 +800,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
 
   
 
@@ -660,6 +819,8 @@
 
   
 
+
+  
 
 
   
