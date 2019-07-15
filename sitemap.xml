@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://obsidian.synology.me/categories/index.html</loc>
+    
+    <lastmod>2019-07-15T01:41:22.040Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://obsidian.synology.me/2019/07/15/%E6%8F%92%E5%85%A5%E5%A4%9A%E8%A1%8C%E8%87%B3%E6%AA%94%E6%A1%88/</loc>
+    
+    <lastmod>2019-07-15T01:39:22.394Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://obsidian.synology.me/bookmark/index.html</loc>
+    
+    <lastmod>2019-07-12T08:00:38.038Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://obsidian.synology.me/2019/06/26/Puma7-note/</loc>
     
     <lastmod>2019-07-12T02:11:23.179Z</lastmod>
@@ -12,13 +33,6 @@
     <loc>http://obsidian.synology.me/about/index.html</loc>
     
     <lastmod>2019-07-11T11:30:37.943Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://obsidian.synology.me/bookmark/index.html</loc>
-    
-    <lastmod>2019-07-11T10:08:40.821Z</lastmod>
     
   </url>
   
@@ -75,13 +89,6 @@
     <loc>http://obsidian.synology.me/2019/06/27/Modify-Hexo-theme-next-branch-Pisces-width/</loc>
     
     <lastmod>2019-07-01T02:32:34.424Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://obsidian.synology.me/categories/index.html</loc>
-    
-    <lastmod>2019-06-27T08:54:47.707Z</lastmod>
     
   </url>
   
