@@ -153,13 +153,13 @@
 
 
 
-  <meta name="description" content="動機最近工作上需要在Windows視窗程式上呼叫Python script，之前完全沒用過C#而且對Python也不熟的我，就只能上網找資料了。找著找著還真的發現了一套叫IronPython的套件可以使用。底下就來筆記一下我在網上找到的內容。 配置過程安裝ironPython下載最新版應該是IronPython-2.7.x.msi http://ironpython.net/  開啟Visual">
+  <meta name="description" content="動機最近工作上需要在Windows視窗程式上呼叫Python script，之前完全沒用過C#而且對Python也不熟的我，就只能上網找資料了。找著找著還真的發現了一套叫IronPython的套件可以使用。底下就來筆記一下我在網上找到的內容。">
 <meta name="keywords" content="C#">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C# 利用 ironPython 呼叫Python研究過程">
 <meta property="og:url" content="http://obsidian.synology.me/2019/08/02/c-sharp-work-with-ironpython/index.html">
 <meta property="og:site_name" content="九淘的記事本">
-<meta property="og:description" content="動機最近工作上需要在Windows視窗程式上呼叫Python script，之前完全沒用過C#而且對Python也不熟的我，就只能上網找資料了。找著找著還真的發現了一套叫IronPython的套件可以使用。底下就來筆記一下我在網上找到的內容。 配置過程安裝ironPython下載最新版應該是IronPython-2.7.x.msi http://ironpython.net/  開啟Visual">
+<meta property="og:description" content="動機最近工作上需要在Windows視窗程式上呼叫Python script，之前完全沒用過C#而且對Python也不熟的我，就只能上網找資料了。找著找著還真的發現了一套叫IronPython的套件可以使用。底下就來筆記一下我在網上找到的內容。">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="http://obsidian.synology.me/images/ironpython_01.png">
 <meta property="og:image" content="http://obsidian.synology.me/images/ironpython_02.png">
@@ -168,10 +168,10 @@
 <meta property="og:image" content="http://obsidian.synology.me/images/ironpython_05.png">
 <meta property="og:image" content="http://obsidian.synology.me/images/ironpython_06.png">
 <meta property="og:image" content="http://obsidian.synology.me/images/ironpython_07.png">
-<meta property="og:updated_time" content="2019-08-02T12:04:59.672Z">
+<meta property="og:updated_time" content="2019-08-19T11:45:12.149Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C# 利用 ironPython 呼叫Python研究過程">
-<meta name="twitter:description" content="動機最近工作上需要在Windows視窗程式上呼叫Python script，之前完全沒用過C#而且對Python也不熟的我，就只能上網找資料了。找著找著還真的發現了一套叫IronPython的套件可以使用。底下就來筆記一下我在網上找到的內容。 配置過程安裝ironPython下載最新版應該是IronPython-2.7.x.msi http://ironpython.net/  開啟Visual">
+<meta name="twitter:description" content="動機最近工作上需要在Windows視窗程式上呼叫Python script，之前完全沒用過C#而且對Python也不熟的我，就只能上網找資料了。找著找著還真的發現了一套叫IronPython的套件可以使用。底下就來筆記一下我在網上找到的內容。">
 <meta name="twitter:image" content="http://obsidian.synology.me/images/ironpython_01.png">
 
 
@@ -503,13 +503,23 @@
                 
               
 
-              <time title="創建時間：2019-08-02 19:06:00 / 修改時間：20:04:59" itemprop="dateCreated datePublished" datetime="2019-08-02T19:06:00+08:00">2019-08-02</time>
+              <time title="創建時間：2019-08-02 19:06:00" itemprop="dateCreated datePublished" datetime="2019-08-02T19:06:00+08:00">2019-08-02</time>
             </span>
           
 
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新於</span>
+                
+                <time title="修改時間：2019-08-19 19:45:12" itemprop="dateModified" datetime="2019-08-19T19:45:12+08:00">2019-08-19</time>
+              </span>
             
           
 
@@ -558,6 +568,7 @@
 
       
         <h1 id="動機"><a href="#動機" class="headerlink" title="動機"></a>動機</h1><p>最近工作上需要在Windows視窗程式上呼叫Python script，之前完全沒用過C#而且對Python也不熟的我，就只能上網找資料了。找著找著還真的發現了一套叫IronPython的套件可以使用。底下就來筆記一下我在網上找到的內容。</p>
+<a id="more"></a>
 <h1 id="配置過程"><a href="#配置過程" class="headerlink" title="配置過程"></a>配置過程</h1><h2 id="安裝ironPython"><a href="#安裝ironPython" class="headerlink" title="安裝ironPython"></a>安裝ironPython</h2><p>下載最新版應該是IronPython-2.7.x.msi <a href="http://ironpython.net/" target="_blank" rel="noopener">http://ironpython.net/</a></p>
 <img src="/images/ironpython_01.png">
 <h2 id="開啟Visual-Studio-2019"><a href="#開啟Visual-Studio-2019" class="headerlink" title="開啟Visual Studio 2019"></a>開啟Visual Studio 2019</h2><p>開啟Vidusl Studio 2019並創建新專案，選擇C# Windows Forms App(.Net Framework)</p>

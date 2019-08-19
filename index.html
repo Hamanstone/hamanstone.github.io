@@ -833,13 +833,23 @@
                 
               
 
-              <time title="創建時間：2019-08-02 19:06:00 / 修改時間：20:04:59" itemprop="dateCreated datePublished" datetime="2019-08-02T19:06:00+08:00">2019-08-02</time>
+              <time title="創建時間：2019-08-02 19:06:00" itemprop="dateCreated datePublished" datetime="2019-08-02T19:06:00+08:00">2019-08-02</time>
             </span>
           
 
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新於</span>
+                
+                <time title="修改時間：2019-08-19 19:45:12" itemprop="dateModified" datetime="2019-08-19T19:45:12+08:00">2019-08-19</time>
+              </span>
             
           
 
@@ -888,28 +898,16 @@
 
       
         
+          <h1 id="動機"><a href="#動機" class="headerlink" title="動機"></a>動機</h1><p>最近工作上需要在Windows視窗程式上呼叫Python script，之前完全沒用過C#而且對Python也不熟的我，就只能上網找資料了。找著找著還真的發現了一套叫IronPython的套件可以使用。底下就來筆記一下我在網上找到的內容。</p>
+          <!--noindex-->
           
-            <h1 id="動機"><a href="#動機" class="headerlink" title="動機"></a>動機</h1><p>最近工作上需要在Windows視窗程式上呼叫Python script，之前完全沒用過C#而且對Python也不熟的我，就只能上網找資料了。找著找著還真的發現了一套叫IronPython的套件可以使用。底下就來筆記一下我在網上找到的內容。</p>
-<h1 id="配置過程"><a href="#配置過程" class="headerlink" title="配置過程"></a>配置過程</h1><h2 id="安裝ironPython"><a href="#安裝ironPython" class="headerlink" title="安裝ironPython"></a>安裝ironPython</h2><p>下載最新版應該是IronPython-2.7.x.msi <a href="http://ironpython.net/" target="_blank" rel="noopener">http://ironpython.net/</a></p>
-<img src="/images/ironpython_01.png">
-<h2 id="開啟Visual-Studio-2019"><a href="#開啟Visual-Studio-2019" class="headerlink" title="開啟Visual Studio 2019"></a>開啟Visual Studio 2019</h2><p>開啟Vidusl Studio 2019並創建新專案，選擇C# Windows Forms App(.Net Framework)</p>
-<img src="/images/ironpython_02.png">
-
-<h2 id="寫一個最簡單的-py文件待呼叫"><a href="#寫一個最簡單的-py文件待呼叫" class="headerlink" title="寫一個最簡單的.py文件待呼叫"></a>寫一個最簡單的.py文件待呼叫</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="function">def <span class="title">text</span>(<span class="params"></span>):</span></span><br><span class="line"><span class="function">    return "我是返回結果"</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="導入IronPython及Microsoft-Scripting至新專案中"><a href="#導入IronPython及Microsoft-Scripting至新專案中" class="headerlink" title="導入IronPython及Microsoft.Scripting至新專案中"></a>導入IronPython及Microsoft.Scripting至新專案中</h2><img src="/images/ironpython_03.png" title="加入參考">
-<img src="/images/ironpython_04.png" title="搜尋IronType勾選並按下確定">
-<img src="/images/ironpython_05.png" title="確認IronPython及Microsoft.Scripting都已加入">
-<h2 id="呼叫前添加兩個參考"><a href="#呼叫前添加兩個參考" class="headerlink" title="呼叫前添加兩個參考"></a>呼叫前添加兩個參考</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> IronPython.Hosting;</span><br><span class="line"><span class="keyword">using</span> Microsoft.Scripting.Hosting;</span><br></pre></td></tr></table></figure>
-
-<h2 id="在視窗中加入Label1"><a href="#在視窗中加入Label1" class="headerlink" title="在視窗中加入Label1"></a>在視窗中加入Label1</h2><img src="/images/ironpython_06.png">
-
-<h2 id="插入程式碼"><a href="#插入程式碼" class="headerlink" title="插入程式碼"></a>插入程式碼</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ScriptRuntime pyRuntime = Python.CreateRuntime();</span><br><span class="line"><span class="keyword">dynamic</span> py = pyRuntime.UseFile(<span class="string">"mainwindows.py"</span>);</span><br><span class="line"><span class="keyword">string</span> a = py.text();</span><br><span class="line">label1.Text = a;</span><br></pre></td></tr></table></figure>
-
-<h2 id="最後的程式碼"><a href="#最後的程式碼" class="headerlink" title="最後的程式碼"></a>最後的程式碼</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.Collections.Generic;</span><br><span class="line"><span class="keyword">using</span> System.ComponentModel;</span><br><span class="line"><span class="keyword">using</span> System.Data;</span><br><span class="line"><span class="keyword">using</span> System.Drawing;</span><br><span class="line"><span class="keyword">using</span> System.Linq;</span><br><span class="line"><span class="keyword">using</span> System.Text;</span><br><span class="line"><span class="keyword">using</span> System.Threading.Tasks;</span><br><span class="line"><span class="keyword">using</span> System.Windows.Forms;</span><br><span class="line"><span class="keyword">using</span> IronPython.Hosting;</span><br><span class="line"><span class="keyword">using</span> Microsoft.Scripting.Hosting;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">WindowsFormsApp1</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">partial</span> <span class="keyword">class</span> <span class="title">Form1</span> : <span class="title">Form</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Form1</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            InitializeComponent();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Form1_Load</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            ScriptRuntime pyRuntime = Python.CreateRuntime();</span><br><span class="line">            <span class="keyword">dynamic</span> py = pyRuntime.UseFile(<span class="string">"C:\\Users\\stone\\Documents\\Arlo\\iqc-test\\test.py"</span>);</span><br><span class="line">            <span class="keyword">string</span> a = py.text();</span><br><span class="line">            label1.Text = a;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="執行成果"><a href="#執行成果" class="headerlink" title="執行成果"></a>執行成果</h2><img src="/images/ironpython_07.png" title="執行結果">
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/08/02/c-sharp-work-with-ironpython/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
           
+          <!--/noindex-->
         
       
     </div>
@@ -1013,13 +1011,23 @@
                 
               
 
-              <time title="創建時間：2019-08-01 15:58:00 / 修改時間：17:28:44" itemprop="dateCreated datePublished" datetime="2019-08-01T15:58:00+08:00">2019-08-01</time>
+              <time title="創建時間：2019-08-01 15:58:00" itemprop="dateCreated datePublished" datetime="2019-08-01T15:58:00+08:00">2019-08-01</time>
             </span>
           
 
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新於</span>
+                
+                <time title="修改時間：2019-08-19 19:45:55" itemprop="dateModified" datetime="2019-08-19T19:45:55+08:00">2019-08-19</time>
+              </span>
             
           
 
@@ -1083,35 +1091,19 @@
 
       
         
-          
-            <h1 id="Windows-10的虛擬桌面攻略"><a href="#Windows-10的虛擬桌面攻略" class="headerlink" title="Windows 10的虛擬桌面攻略"></a>Windows 10的虛擬桌面攻略</h1><img src="https://static.newmobilelife.com/wp-content/uploads/2015/07/windows-10-shortcut_00.jpg">
+          <h1 id="Windows-10的虛擬桌面攻略"><a href="#Windows-10的虛擬桌面攻略" class="headerlink" title="Windows 10的虛擬桌面攻略"></a>Windows 10的虛擬桌面攻略</h1><img src="https://static.newmobilelife.com/wp-content/uploads/2015/07/windows-10-shortcut_00.jpg">
 <p>最近因為買了台Intel NUC，原本要拿來安裝黑蘋果，但資質努頓的我搞了兩個星期後，還是沒能搞定。所以還是乖乖的安裝Windows 10就好了。因為很久沒使用Windows的作業系統了，感覺很生疏。第一個感覺適應的就是虛擬桌面了，Mac上面的虛擬桌面太方便好用了，換到Windows 10後完全無法接受這個小小的桌面空間，想著Mac上的虛擬桌面能在Windows 10上使用該有多好。上網一查，原來人家Microsoft本來就有幫Windows 10設計了虛擬桌面了。</p>
 <hr>
 <p><a href="https://www.newmobilelife.com/2015/07/30/windows-10-shortcut_2-2/" target="_blank" rel="noopener">本文出處</a></p>
-<h2 id="Win-開始功能表"><a href="#Win-開始功能表" class="headerlink" title="Win 開始功能表"></a><code>Win</code> 開始功能表</h2><p>毫無疑問在 Windows 必用的快捷鍵，為何又要說？原因是不同於 Win 8 的開始畫面，Win 10 的 Win 鍵是打開連同關機按鈕和應用程式清單的開始功能表。簡單說，小編只是想說開始功能表回來了。</p>
-<img src="https://static.newmobilelife.com/wp-content/uploads/2015/07/windows-10-shortcut_01.png" title="開始功能鍵 開始功能表">
-
-<h2 id="Win-A-打開訊息中心"><a href="#Win-A-打開訊息中心" class="headerlink" title="Win+A 打開訊息中心"></a><code>Win</code>+<code>A</code> 打開訊息中心</h2><p>Windows 10的重要訊息中心，除了系統訊息之外下方也有像平板電腦模式、連線、便條箋、藍牙、亮度、網路等等大量系統設定。</p>
-<img src="https://static.newmobilelife.com/wp-content/uploads/2015/07/windows-10-shortcut_02.png">
-
-<h2 id="Win-E-打開檔案總管"><a href="#Win-E-打開檔案總管" class="headerlink" title="Win+E 打開檔案總管"></a><code>Win</code>+<code>E</code> 打開檔案總管</h2><img src="https://static.newmobilelife.com/wp-content/uploads/2015/07/windows-10-shortcut_03.png">
-
-<h2 id="Win-I：Windows-10-系統設定（不是控制台）"><a href="#Win-I：Windows-10-系統設定（不是控制台）" class="headerlink" title="Win+I：Windows 10 系統設定（不是控制台）"></a><code>Win</code>+<code>I</code>：Windows 10 系統設定（不是控制台）</h2><img src="https://static.newmobilelife.com/wp-content/uploads/2015/07/windows-10-shortcut_05.png">
-
-<h2 id="Win-S-搜尋介面"><a href="#Win-S-搜尋介面" class="headerlink" title="Win+S 搜尋介面"></a><code>Win</code>+<code>S</code> 搜尋介面</h2><p>除了 <code>Win</code>+<code>S</code> 之外，按 <code>Win</code>+<code>Q</code> 也可啟動搜尋介面。</p>
-<img src="https://static.newmobilelife.com/wp-content/uploads/2015/07/windows-10-shortcut_07.png">
-
-<h2 id="Win-T：從下方工作列選擇應用程式，按-Enter-開啟"><a href="#Win-T：從下方工作列選擇應用程式，按-Enter-開啟" class="headerlink" title="Win+T：從下方工作列選擇應用程式，按 Enter 開啟"></a><code>Win</code>+<code>T</code>：從下方工作列選擇應用程式，按 Enter 開啟</h2><p>按這個快捷鍵之後，你可以按方向鍵選擇工作列上正執行或釘選的應用程式，還可指定視窗開啟。</p>
-<img src="https://static.newmobilelife.com/wp-content/uploads/2015/07/windows-10-shortcut_08.png">
-
-<h2 id="Win-方向鍵：排列視窗"><a href="#Win-方向鍵：排列視窗" class="headerlink" title="Win+方向鍵：排列視窗"></a><code>Win</code>+方向鍵：排列視窗</h2><p>簡單而言，就是排列視窗到左右方或四個角落。</p>
-<img src="https://static.newmobilelife.com/wp-content/uploads/2015/07/windows-10-shortcut_09.png">
-
-<h2 id="Win-Tab-虛擬桌面快捷鍵"><a href="#Win-Tab-虛擬桌面快捷鍵" class="headerlink" title="Win+Tab 虛擬桌面快捷鍵"></a><code>Win</code>+<code>Tab</code> 虛擬桌面快捷鍵</h2><img src="https://static.newmobilelife.com/wp-content/uploads/2015/07/windows-10-shortcut_10.png">
-<p><code>Win</code>+<code>Ctrl</code>+<code>D</code>：新增虛擬桌面<br><code>Win</code>+<code>Ctrl</code>+<code>F4</code>：關閉虛擬桌面<br><code>Win</code>+<code>Ctrl</code>+左右方向鍵：轉換虛擬桌面<br><code>Win</code>+<code>Shift</code>+左右方向鍵：把視窗移動到鄰近的虛擬桌面(Deprecated)，如果有需要可參考<a href="https://github.com/Eun/MoveToDesktop" target="_blank" rel="noopener">MoveToDesktop</a></p>
-<h2 id="其他-Windows-10-快捷鍵一覽"><a href="#其他-Windows-10-快捷鍵一覽" class="headerlink" title="其他 Windows 10 快捷鍵一覽"></a>其他 Windows 10 快捷鍵一覽</h2><p><code>Win</code>+<code>Tab</code>：轉換使用中視窗<br><code>Win</code>+<code>D</code>：顯示桌面<br><code>Win</code>+<code>H</code>：在所有視窗進行分享<br><code>Win</code>+<code>L</code>：鎖定桌面<br><code>Win</code>+<code>M</code>：縮小所有視窗<br><code>Win</code>+<code>P</code>：投影第二螢幕設定<br><code>Win</code>+<code>Q</code>：搜尋介面<br><code>Win</code>+<code>R</code>：「執行」視窗</p>
-
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/08/01/windows10-virtual-desktop/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
