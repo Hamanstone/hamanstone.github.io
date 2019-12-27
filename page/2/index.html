@@ -347,7 +347,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>歸檔<span class="badge">15</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>歸檔<span class="badge">16</span></a>
 
   </li>
         
@@ -430,6 +430,202 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://obsidian.synology.me/2019/07/09/rmate-on-Sublime-text-3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="PEGA拓也哥">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/nami_avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="九淘的記事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/09/rmate-on-Sublime-text-3/" class="post-title-link" itemprop="url">從本地編輯遠端文件</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">發表於</span>
+              
+
+              
+                
+              
+
+              <time title="創建時間：2019-07-09 14:40:00 / 修改時間：15:25:16" itemprop="dateCreated datePublished" datetime="2019-07-09T14:40:00+08:00">2019-07-09</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分類於</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Editor/" itemprop="url" rel="index"><span itemprop="name">Editor</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">評論數：</span>
+                <a href="/2019/07/09/rmate-on-Sublime-text-3/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/09/rmate-on-Sublime-text-3/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="問題"><a href="#問題" class="headerlink" title="問題"></a>問題</h1><p>　　很多時候source code在遠端的server上，要編輯檔案最快的方法就是透過vi來進行。我們都知道vi很強大很方便，但是再怎麼方便也沒有比在自己家方便。於是乎，我們可能就想把檔案抓回本地進行編輯。如果你曾使用FTP之類的工具將檔案下載回來，再使用本地的編輯器修改檔案的經驗，你可能會發現傳檔的效率並不是很好，感覺不像本地儲存那麼直覺，總是會卡卡的。</p>
+<p>　　所以我就想說有沒有什麼方式可以用本地的編輯器直接在遠端編輯的工具，找了之後發現還蠻多的，例如Beyond Compare就可以透過SSH的方式連進遠端的伺服器進行檔案的編輯。不過畢竟Beyond Compare並不是一個專業的編輯器，用來比對檔案差異很方便，但是用來當編輯器就實在有點不好意思了。</p>
+<p>　　我常用的編輯器是Sublime Text，所以我就在這上面找看看有哪些適合的套件可以達成遠端編輯的目的。我曾經用過<a href="https://packagecontrol.io/packages/SFTP" target="_blank" rel="noopener">SFTP</a>、<a href="https://packagecontrol.io/packages/FTPSync" target="_blank" rel="noopener">FTPSync</a>這類的外掛插件，不過要嘛不更新了，要不就是商用軟體（要付錢的）。而且我記得設定還挺麻煩的，後來找到一個比較簡單的插件，也就是今天的主角<a href="https://packagecontrol.io/packages/RemoteSubl" target="_blank" rel="noopener">RemoteSubl</a></p>
+<h1 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h1><p>　　其實安裝方式在插件的連結頁面中就已經提到了，但是英文寫的有點多，所以我就用中文來把它縮減一下。要使用這個插件需要把工作分成兩個部份，一個是遠端伺服器，另一個是本地電腦。底下我們就開始動手打造吧。</p>
+<p>　　首先，我們先從本地Sublime Text插件安裝說起。其實要在Sublime Text上安裝<code>RemoteSubl</code>很簡單，直接透過Package Control指令即可輕鬆安裝完成。裝完<code>RemoteSubl</code>插件後，基本上我們在本地端的工作就結束了。</p>
+<blockquote>
+<p><small>如果不曉得怎麼透過Package Control安裝Sublime Text插件，可以上網找找，應該蠻多介紹的，基本上Package Control官網上就有解釋如何<a href="https://packagecontrol.io/installation" target="_blank" rel="noopener">安裝</a>，有空我會再補一篇教學。</small></p>
+</blockquote>
+<p>　　第二步，你得連線到你的遠端機器上，安裝一個叫<code>rmate</code>的script(bash version)，如果安裝過就不用再安裝了，要安裝它其實也很簡單，直接把它抓下來放到你希望的路徑底下，最後變更執行權限後即可。就這樣，沒有其他步驟了。我們把重點放到怎麼使用它吧，讓我們繼續看下去。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -o /usr/local/bin/rmate https://raw.githubusercontent.com/aurora/rmate/master/rmate</span><br><span class="line">sudo chmod +x /usr/local/bin/rmate</span><br></pre></td></tr></table></figure>
+
+<h1 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h1><p>　　從你本地的電腦的Terminal中執行底下指令，透過SSH的remote port forwarded機制連線到遠端的伺服器上。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ssh</span> <span class="selector-tag">-R</span> 52698<span class="selector-pseudo">:localhost</span><span class="selector-pseudo">:52698</span> <span class="selector-tag">user</span>@<span class="keyword">example</span>.<span class="keyword">com</span></span><br></pre></td></tr></table></figure>
+
+<p>　　通道建立後，你就可以直接在遠端機器上執行<code>rmate [file]</code>指令，執行後你就可以看到檔案從本地的Sublime Text被開啟了。</p>
+<blockquote>
+<h5>注意：</h5>
+
+<p><small>在執行<code>rmate [file]</code>指令前，請先確定你己經將Sublime Text編輯器打開了。不然你會看到<code>connect_to localhost port 52698: failed.</code></small></p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    <div>
+      
+    </div>
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -1286,7 +1482,7 @@
                 
               
 
-              <time title="創建時間：2019-06-26 10:23:41" itemprop="dateCreated datePublished" datetime="2019-06-26T10:23:41+08:00">2019-06-26</time>
+              <time title="創建時間：2019-06-26 10:23:00" itemprop="dateCreated datePublished" datetime="2019-06-26T10:23:00+08:00">2019-06-26</time>
             </span>
           
 
@@ -1301,7 +1497,7 @@
                 
                   <span class="post-meta-item-text">更新於</span>
                 
-                <time title="修改時間：2019-08-06 17:01:40" itemprop="dateModified" datetime="2019-08-06T17:01:40+08:00">2019-08-06</time>
+                <time title="修改時間：2019-12-27 11:03:09" itemprop="dateModified" datetime="2019-12-27T11:03:09+08:00">2019-12-27</time>
               </span>
             
           
@@ -1474,7 +1670,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-count">16</span>
                     <span class="site-state-item-name">文章</span>
                   </a>
                 </div>

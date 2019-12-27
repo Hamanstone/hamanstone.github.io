@@ -153,17 +153,17 @@
 
 
 
-  <meta name="description" content="The article has been encrypted, please enter your password to view.">
+  <meta name="description" content="如何像使用EEPROM的方式使用Backup SRAM在STM32F4之上ReferencesStackOverflow Motivation             There are two ways of emulating EEPROM on the STM32F4:On-chip 4 Kbytes backup SRAMOn-chip Flash, with specific softw">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ATTEC608A來料驗證">
-<meta property="og:url" content="http://obsidian.synology.me/2019/08/05/Secure-Element-Check-Procedure/index.html">
+<meta property="og:title" content="如何在STM32F4上使用Backup SRAM(like EEPROM)">
+<meta property="og:url" content="http://obsidian.synology.me/2019/09/05/How-to-use-Backup-SRAM-as-EEPROM-in-STM32F4/index.html">
 <meta property="og:site_name" content="九淘的記事本">
-<meta property="og:description" content="The article has been encrypted, please enter your password to view.">
+<meta property="og:description" content="如何像使用EEPROM的方式使用Backup SRAM在STM32F4之上ReferencesStackOverflow Motivation             There are two ways of emulating EEPROM on the STM32F4:On-chip 4 Kbytes backup SRAMOn-chip Flash, with specific softw">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2019-08-06T08:30:06.214Z">
+<meta property="og:updated_time" content="2019-09-05T02:56:37.674Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ATTEC608A來料驗證">
-<meta name="twitter:description" content="The article has been encrypted, please enter your password to view.">
+<meta name="twitter:title" content="如何在STM32F4上使用Backup SRAM(like EEPROM)">
+<meta name="twitter:description" content="如何像使用EEPROM的方式使用Backup SRAM在STM32F4之上ReferencesStackOverflow Motivation             There are two ways of emulating EEPROM on the STM32F4:On-chip 4 Kbytes backup SRAMOn-chip Flash, with specific softw">
 
 
 
@@ -171,7 +171,7 @@
 
   
   
-  <link rel="canonical" href="http://obsidian.synology.me/2019/08/05/Secure-Element-Check-Procedure/">
+  <link rel="canonical" href="http://obsidian.synology.me/2019/09/05/How-to-use-Backup-SRAM-as-EEPROM-in-STM32F4/">
 
 
 
@@ -181,7 +181,7 @@
   };
 </script>
 
-  <title>ATTEC608A來料驗證 | 九淘的記事本</title>
+  <title>如何在STM32F4上使用Backup SRAM(like EEPROM) | 九淘的記事本</title>
   
 
 
@@ -451,7 +451,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://obsidian.synology.me/2019/08/05/Secure-Element-Check-Procedure/">
+    <link itemprop="mainEntityOfPage" href="http://obsidian.synology.me/2019/09/05/How-to-use-Backup-SRAM-as-EEPROM-in-STM32F4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="PEGA拓也哥">
@@ -468,7 +468,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">ATTEC608A來料驗證
+          <h1 class="post-title" itemprop="name headline">如何在STM32F4上使用Backup SRAM(like EEPROM)
 
               
             
@@ -494,23 +494,13 @@
                 
               
 
-              <time title="創建時間：2019-08-05 21:41:32" itemprop="dateCreated datePublished" datetime="2019-08-05T21:41:32+08:00">2019-08-05</time>
+              <time title="創建時間：2019-09-05 10:34:00 / 修改時間：10:56:37" itemprop="dateCreated datePublished" datetime="2019-09-05T10:34:00+08:00">2019-09-05</time>
             </span>
           
 
           
             
 
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新於</span>
-                
-                <time title="修改時間：2019-08-06 16:30:06" itemprop="dateModified" datetime="2019-08-06T16:30:06+08:00">2019-08-06</time>
-              </span>
             
           
 
@@ -526,8 +516,8 @@
                 </span>
             
                 <span class="post-meta-item-text">評論數：</span>
-                <a href="/2019/08/05/Secure-Element-Check-Procedure/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/08/05/Secure-Element-Check-Procedure/" itemprop="commentCount"></span>
+                <a href="/2019/09/05/How-to-use-Backup-SRAM-as-EEPROM-in-STM32F4/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/09/05/How-to-use-Backup-SRAM-as-EEPROM-in-STM32F4/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -558,20 +548,21 @@
       
 
       
-        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-<div id="hbe-security">
-  <div class="hbe-input-container">
-  <input type="password" class="hbe-form-control" id="pass" placeholder="加密的內容">
-    <label for="pass">加密的內容</label>
-    <div class="bottom-line"></div>
-  </div>
-</div>
-<div id="decryptionError" style="display: none;">Incorrect Password!</div>
-<div id="noContentError" style="display: none;">No content to display!</div>
-<div id="encrypt-blog" style="display:none">
-U2FsdGVkX19ikiMNYEyMsckHwG2HG7p2AJNnjbsoToF7vLu2If4tuftRB8KzQmNYo5Un5VCqetBM9cj8bD5M39BhX6565eMXonNK0Jfn0IVpnsaKciQg11SWjK5JxrQkTxD+QMCq79sWyv5RoGRmyFF8dns5uPgRz+vG0ouYyZpeieMPpJlqb+GFLZrpP3AF9tAmhK5Xn0+oEgruFDCLYFdz9bZk+ZqZT0UDvLn+J2SuwpEtkJzRlsTcrkOrhdBBxDD2aJh+j/UQYznsgDGxVWqxa0SWumm/fcCEq4VmZUg6EvpK9nXdro+t+7/kybOuIW/Eja5cJDUY/fAuBkXDFSeUeZqnXmjWU5rzuGwUWANjwDyLm5Yy9o2w2RfPg3iZAryyw+/8GSXf29igd5hu5fDZJNN6a8Z/JMUxM+dbSsK6jTmT5+MBAproM0w0AlBTtziykyuL5x5FJfeIp8SiVb6rL8FaYZ215QhOb/5V+SYNa98vox1U7U8V4zzdjckH9ih/YnUlxFmLc0rOzbQ5uxAgLS3w9GV+XGMzuHwsSTF+rHNVSuAe9VfRFUlxUx2XAPV+yQ336yI643ioGVCTK8gRZYSmY0XhgsRziTH9y0mb7OjA5jxGxsNmA44G2GII0iiCGCM0sVLZtoadxlkoAf0em1YMD7r1Yh8jMKLUaBKGWNscwBhmsTO62pWFjeH9VD70ojjs9WPPBqbZtQKSPf/Gdkhej6L3CcXR/l22bGHW5obmIoWN3HYxRljlLF1GCukRegDeUfVBT/PzCvMPopakyfSWK0iTGquufFFSRjqd9NGJ9Qxiy7akUINC3gntR/aYP8FYmn5FhHhS0IcwlosbYq/wMzCAXJCWfRO/VjuGfj1DISKn9VS6hZ4hknp2QRuWmOP9Jd3ypVDw0mSLNfVmESYbFpvk6Kf2/HRJMAbH3UwJUq94r0IECAtfKfqgrJ0Ow63vDgt/qETBok1resNi+2OtTdryzLIfjaUR/vUH6ACQY16XypZwVaeRcmIykCqNjMCWI4DrP7zEG48oqWRIg20x4E0mPA7ZY+6OUymBUBwMi5INmKcseUI9mPAVmPIHgdQgeh1cfo9XtXg9MxOaYN+xtXPKPqLsznDpOZ+SYYe47balxe285HFR3pRFzDQIUB5lHB+18MrbNG7oGLDQwOD9U1pmzLGJO5Mmk0Al6DhOtsaDhU1lhCx9vZAvQG25y9RAmuLAFwtq3wB7RB4Z4PXDq8uiLr5atENOst4z99JaCL5Pu01LBFw8lyVu0fg3AZUjpnXiTcHDS8GiTxu5Zmm0iDCtnWOkcbZyJciCNF/T4dmRS1rPbvMbrVZ6pmtsWp6Y7AeehVmBEtEDnmVm7nyITT3J0ZuefhmB8tZ5VmKphqLcpWydK+OGnARg8tp8KdmQ1vCcnrhZPP21WvBHRRG6sq94C3LchjX1ZfIFO5scgVaV6XdMt2RpNN61cQP9wL9WPusNv33vBI5W6TIpg+BFYMOXJkWhbkYY4pbYIjwagNaz9paFp5ul9RYhrRWknoujmfhGYYIF0sV0/FyXTVFxrVBhSPQjPa97dBp6XBGm/UHxx561wU8JAQ4W+AKdT5+8JOQQcvvz4MJ5A+vqjqVqkqWojES9lB563dHjnCoEuCMRPQEAWrwL4Z9K8xZrhW6bYKHu+b5Fwo2tSDEXD5fssRmQlvA5k2eBw+v2e0pOhplYYZNwPPTzs+D+GfswFj80GKmjuyDVQxWyxjVz30ZQFcyis6CQvoL3ljGMq/RqR8MrhdAAq+bEh10wnN50YpdZImJ5yLY0aUlg37JDu+V7xwsd5abpX4PekZslK2Yr0ADNZlObOckqlMzSw34UWfIVr67VroFp352tdls3OOHRQN+9Lbs6Bso/PTAdWwzJDp+YpBgdxUgyUQ9RUZyoJsmMCnRb5PaZ82oASUPHslB+YFEUSAGTH75BVnJpiuroL/V3oue0JT00As7WxmdWzpSnCTvDhLcmOFY1v7Olf97eI3aQJ8v8PwJKbd08pD/P5WPKX70PvUk5vJEpCtpBSC4M4K0n7FROTfW03Fv6/TLdTNZsPUE4S2wyWvPYQhTpxYjZbM2U+aZQihwr6UZEIlCsQmsViH4UVT8AZpffMQM5rt1A+t3ohaPo3loGjG8eMg0e3oqoccqJg0qNu208FYb7On9UL9Q/FXYLiYR0E8cI4l7e5dpq1cjrIxvFSVZLdT6T8GU+NUJ1t8TztlMhxUg+qq9VyXZmcNFePAcKXmrSNoYXB+f4alVBA1GXct7mOccjW84Gchltt8ALhGCmvZnhJ+PMG37DOX4dJXghoYoGWfXllUPfwEsXbC5r0NynrNMf86/ntfOP3QV4s+weKmLsp5mMPoiK13SWKgv/KjvDCDs3Txid6iz0DK4/RXOgeomjphnBAOYCk0imZ89uuzGPUf4ormUExR3OzEZMZMHAmT4SMt175Q/jo/D9C3leCosfqH8GE/0/ZCLTVS90t0grkAQUCAhSQZeg53s6iHnieeCUpRX3sjgqt6Taf+52jTPF/P+GVGgt/+cHuFVJutJPcv1Gqra+xK3DOy5wqb0t0SROmqNqt4HTnsw/jNBmRZPVyXTRA5xu8lti16ELCKQ9jcuCTu6UYbHpY/P4vuGEgJrzzJkit3VUAF/11SLQNiZfV2KRjUr+3czMkuMcgLAvqkZ/PJGR2bcqNP57GonEgMq+fYLntcXIbVJWXnGlh8Mq1sOBt4STFQoojFkG4UMI7KfkS9FIJlPd/y8SYpipBW1eWrOKpiutD0WYe/LQBiWRzxysHjoYkdxYdZYcyAxQxfr/2ReZh+y8DISytdEU9VFrAhJRsgSrEtIgDAt5yJk5gOh9y3dOsEWsSwtYmg6ycE6RZbTLZl8jqd8vmK5qnhOia3vilnLOz8iYizccoNNCueV/4zjCUsEXsicy77MvvBMQLCIzszE/iFg5tswDbYOU7mbqwyAjRBsscKO2KXZ18+3O1vU21CM4q9RL+E+R+y43ynPztv4HQsh8o/w8FmXahU6IKNSt2dMNpqwMIlaUJX++lh3Fe4gfHNU+zxardjhWzcCUXl4ltZ7vou3groXAHZfcV3nITH/Z82m7BKJ3n6BnXcA8d+/+1KIrnOK8PoryFJv5wtFmtVz5Krg60Iw9xKi+HpJ93IOo1sKzo++aHmcGGPPvCCh2jvNJqJfiCIcSYFHzwr+1Y9X3+/CEhYDZKK+Stzi7sMPat1H1ZSSAENuVehY+/jq/qXn6qCOkiVB1lVPm/RTrdVmcr8+rstrd2pfhM/oEasGZL8fOJ4M5Ad03MkzFV27ieLBOcKp1bgmmna2KBn5mgZPijZR6pVh5R/h3BKN+eWR9c7k0AAeNGKCL69H4jJ0ZzvSB7287CHbiZvdlAoeF/ShQwisCDh3WXNvrrq5xy6bDfQvuBULoOwZj/O9I8uYsDO5kYMgBvSawK3/yA4u0oGV4xp1+hYQCCMvvi1KNqoayGYt/YdDetZ/zwRR4/POegsPfEeHXXOHRyDU2E2nrJbaqKFQNM7kBBDxQ26AhR2Fxywhg7arIWst3vhVyUWAdK4d7TGZLL1RGjUXQf9yQApN0Ez7Y7nVFr/grGobm5nMQ9QGFN5VHP9wEAJdiEwlNM5A3a55Li3RZiVwDFQgtrMa0p4/+j9+8F31YL4ZLLmXzWaW96xVNTrAjGC0wuMU4j/GHsIr5ET0f5D1o63i2ZW0NgQ3iGjLLFWyvqcJJ89/g434HpL/ieZq5cnE34PVQrU4SiBgJzx+3P4rvHKgWF5R9cqOmMFID67qpmMX+9mVBZOM2rGjS47xaTx3DLpg4MSTTidz4eNgXQpdPM+0/QS1nIBay1J8FrOVioLOjNkP+kDhvGcKO+B5UCmdaBtK30xDBCKQwKPVGrsUBaYvbZG4O+de32e4PL17e+smHoY0ZyWBBhUPd1KspqTOgcSdcGKVxUFLCRJ4SRB6/oNe2mzAq84MtvJlVhHjkus3bb0UmM0i0WehkxY7QhW7Tpcl32isn4WCg4A+RK3QRbw1qRUIQdd6g6rrE30kli6ySk8JjFbK+qFxJLe138sCSD75ZrcPY6xpM1WdWZZktDZLu7dl4ouHqx9thtep6Xesk43Yae1ntJcufYrVzrFwN/bGEjOI1gcSUg6elPy/nNawqIXPC9MW8VRU/xYtWBQtBjOa0fwLq7WdECNxSh1eMd1gdopga6d4rnNMNIZir2107Cuqfj3/gqJ8zI++8J6oDvqB3Gs1Y+y/AUJdLwFrkQQfOd4f31Gji6gAorgRPBMrZLhpzsvL4LZfr7tVT/tfCX6IXDQ+oWkzPE/HN00d1T4OmdOGosIh+fF4C+UXlOZzG4q26uwNZXEYrBWW+sr1GoVCWWeOHgiaxuMOYEff7CaVRcRpiCoS2lIq8aTd0Oqz4olQtybZwWcL3NH9YFs19d4culIkc1LZWq8/ysurCjd5c+S3ygTwQh+gvEPqUdw9PgB+o2h3VqDU+7sgssnebsREP2TWpTpq0yPQJmkrsMBSF5qcptCSONSlLmZjn7HRVAGohKQ80FWcA5qJI9r7Wt+J78dwBmmFDCofxDW0PfFbkuyjsMPA63b5h2f2UFvqNQSoyIpPsOAsyANOE7lhYH0QPBCysIXhzxj80w88c9IcfxCPLFan/snvJSMm1o3dz1OW9Q/iypodPZ9CT2BfxqtJ4BO7SgkJbUMV5EkYQhpSnK4DpWVBXfoCc/V3P3zZVRPKOGZLtSzfT/6qvX5UGYCBsFxji0P4xdfkbltV2LefdJ6efOONOgDY3PvDjMbd0AEVLQhy7fFwny25vk/TOAPrhR9a8dEwDUYwjdMkOw2qSd36DwtD2H/beojf5c2eV3lh80zTL59IC9/BZjIEBcI6rjZRTd1Y9s2hQcdAg0NAW3Uuz3JHM0/yk2dujzM8yIBwzg/Dlfx7pXYOjLy4Wsi0d2lw7srK4LQ0BBqlywcMVRx/QkzV60txb/2PQpR0NCF72GBN7pV9ubZOGGkP244XM6sHZC5M4wbO2hSXBDJbLqMA9PPkBY/Tkw9cOC67H1A3zpfL+ETmAFLzBD1dQRF4A6hGQt6FS/ijQGyU1q/d4ZV0du1iD96oItBEBYQbRpXcS5TQ44Z6co94TvydL2oBRrX/l6VzT5bGV2f5mT6L+6rHHIQbKrbv3QNa32jVBGGJ8bXpYboV5f/5+lXrCmNy3s9QXMHY52+qH67eDKWzc0M6dDM0lroi+oADrKlAzTwSMmT8Wixw2JTpWbkk9w6MbX5jTzlkPYhN6mAexaYEPj/YQiHC43z9FelVBzUO0INIb2/GwnGDRMeWvrXp8mJqJIbDWpXVM5+6fi21Nix7Z3c0SKqOQUwVJyu+bOQFI7qcxhfHWb7pvzVEg9zF5etYO1u26UICBv9c6oF+8n2g5jgMD+xV97PckhMaV2RDrHBilaBU9kdbLQ1tHC8GvspqmAoJYRivk9iaBliwhOLdUFHUAQqLs7QwDg4dFBIxkc7POPoTeiJFq9Qb6cnanBwRB7VUWhaGeB50/Hm9W5gFuiETxoRD+6TMcusP3iOHSD8HKaIm1U+TG8k/3oqAuFBHWBNo61SZwRuEt92Np+WuFtvMJqVswpSiAgRedWhpbUhzGlgCEUnc4pBZj62NYNXVmcpYPeCPma3akoxq/g4YN6/kPxzyPMZxMRBEJJMUvbwQK9G3C8+ckK8pZiZ62MunGDhdueXlqduVHumiJi9uopbkHhy+JrI4+p7R4x2iYeWEzBdgvd/GTyYAZxKQzxGm5PtN7N3fCPvgCNvGD6pHvP7V+TrT2B4fzOmk3LpRbkNADkffb/uwPptoHh7Sm4FSeyO955k6XigzEd6+NXC40V2E3TICCbkAMT4jgVViLKB1Fmd+hi9cvFEyNAnvh05wHK8mrxbivOC0oQCBH5s2fAZPnS5HqzMdHODPG/2M0FFqqaWDCeCFQiJCi3xRyLKhDRkOsofkd7ES+VTiCXeYpshz0/YUn+RcrtB4ZHvlrlUWaV7wUhzAl2ZpXqL5A1/WgYOKZHwEGGZCKrljyAPi33fDbvthNBpRhYiS5TK+FIsksgFSNwH9QtSEyNdx7utXnFEOv8am8UIWzZ+JLasz9R/H8OVjejEWxxTq62RT4SPNi5Cy+QTYmFSVz4T3ik2QCx83CUMu8Ph931BGb1rO5aQDgfnSpSur8neIB8S/cycMAByQtuuDSvPCIB6YqO0LHNoryHa1bAXJkM4JaAgRijzowHcFHrI0hIK0SwPm7uUvDVPo1k+ppxvQkG5N/E4Sg3UzouzMOz3EiI10cnmT9DwqLDK5cJfRK7u7q+zqfF+2mSDgk6ofNZO3imhsA4rPV8nfaj2CldvKGkWuMucffdLXqdp2So82j6Ir+2qlr0/I/hSDfAnmnsdOefaAKeCEcejzXxBSe3BHTnhrJd4u/y9VvEYJKvlRznasu6RXPfsjlW9UAa6FvancUFA2GI+THzSWZspsnQaNPujHCZTyQIkF1XJ9YlQOUsaxOTs9g5esl4fDLhcD76zLeyQVbH4NUxAUuR0X68Rj3FwRnSLiHefxNIpnIQpfdMFQ/A+FM44HRihYFpAPOXRdgVm4ZTu3Z3jtUmbgjswgDyGcpyyGuNuUJirRhK8ofFpNcn83eI1J9WQ5ehPitqqu2ysP46qnDqpMshyewtNWkQpHGVI6K9trncogIKTlS0ke0/2VhWpHmk5UgNV9o+X3j4jywG16XGcCU02fL2LVTU923QHfPi5wBjNbJBJp1o2995Ly7FQ89H5gY/vvmVqXznXQJn95CqM3A287cSSkrdE2eDj2VJI++dkZmTAq7V178RYcqt0RNa/Vxa4bpKZAiFzA4sOxgLhxoDLwfl7qasnVEpR1VY1HhgTNe5vxanoWJnmqXwEzye6XaWwjPuevfoVQJLTiGp+guXOtJl8Lk9ScHnvCwWvNfcz8ziC/jBVsv8vvoErfU0XdCv88AXlaV2LN8qnQRd5i4Blc7GaHDR89jsgaz2BSOt2IuU6OkTdiBk7lmQiVzIi1UaH3sOXgN0wUt2p7EaQesO4xpLOMMasFscxepTSNXfNSmzxv8PSOsiiTpaC+lqI7dlPuAv93op2AWl8YVSQlQOrRqZBwW0DN9iS13Dm8JLdJnqzqW1vMy6hPKRUpWLa/RGPmMV/4e0Fhqu6YrMbRXCDwvLQCxfKuj4UdWWKMc3qG2md6xaTINRJC7JNNlOFIRYCrRLGhrLQKoK6vaQ6jGjY4gZih8y50pBBX8N7MD+zdXLKyvBJVFqtOR9Bf2ekMh2H14sgtLuvwFqMb8RHSjBwDvxVIDK0uX7jh7ChnFxjujoD9D14DyJVPiSA2RXnBlUD3Vj2v/DZJy1RMT2t3VPVqJsUs7HTOHJwzzHGusly2Ctxe3E4Y16FqAReUJevOf4Cg/7KkL2m9LRaZ1tzfuGdhPj8SVEpOt6LYq5tOg+pd5/1dd0dLbOQuI5+iPGMwPFf1Iix1v4qSWQPN79c+cSzhlawjOfoHQ8ssGxrilvFnobd5yevKIRpfIO0cChc7gwJ8xUSkSjULh9uvKTJeDdW9hKUPbC5fs+7kg+owxGc2w0B7tRZSbVnNvtR/E2B/bBS28OyPt6gwQitVV62YIqwSSXMFGkXsTbPPr/WiM+uusS/bJ0Z4CxIdx01uBMw/q9IIqpYuEyFqVc7gl9+utlAy2uYcZ7UnrT+eUq3cM4xzQdsd/3X7eLBcU3WvAHZzo0AFTGwPCy6i636EnqfU0Kdsd3dMKfN+6jz3rP1Wf6UgFQZE52FnFgelg1qKgikTOJfFGfYxFykZ/eC7Q+pG1O/pRuCv9iuDXY3QSf1TL+ldbxb1Xk1TCYwH8zgSZe2on4SXn/vM77gcInmxNzKwA0Gj/u3bgiQsAAnWBBbAP47/v0uu0fCwqtUX0ZjIiGlA4n6Gh6E/VEKwSFzN82CYzgHsZAbvyKKY88RbaD6uTXjeXYcjM4CnqPi96HJVRw7rwGQpySb+OnSm08TT9oAqgMTWDDO1q1ShCteb+JHlzS4X4Amab807RA70W51DNesvXUHirr8ddr6NJHOeRGnrFZAtzwqkTnk4QutF1ELN6FeurP9SHMfqLxEMOhV4Jz43uYxxsMwG32uxHto/P0VutDEQa57U6XaZQLt+itE9gK/1ACYuCC+UWDOw4GaKxuFf4DQCG82QIb+94cCVL2lqp5uXjJwtbv1aXGh30Lw6A+9WCzs9s6xZA62s/wn92ArTtFLIPz97v+WzsMpJSYKtRzQXsF3s+0nt3pHf95y9pvfLWsgbPEoUXyfmxhhcv7PyIMKzpc2P2E2VoAcPUQZXsOdyx0UczPQUK0d8Y9dTm8qJdod699nNEfh7glGKXcVA97T5n9A2LKZ9H0wb2gEThxpLqAFdbIr5wZfd83Fm9DJUEUTrX6/lEJm8xrqBVKywD/BvJVkjBHTufQTWZBEvqSSN8VnaK2r7w0OLk9OHpSgfa9hL1fQcIXuvMhj8svXjs7265Q77L4zWiWAQwK1CgDvgM8+tOlWxE15PKP3969g6gjdUm3gwC7lYBTYvYWPAa359LjFwdeJy2c78SKkwJFslcnNN9Gou9FMMe+X/YfGGsU+2IDavYjcEKmPaFEDLjx5PpvY2Cc3+hp08GekeTjHomh+eEae80OEIdMCJAGx9XKKv6+rfCYC3V9xOOD3U35r3XfCTkvT/TeJvJ2+PQqjshLus796rgHxMe5lkrlR6KhhcHP91Q1WCZQZvo86JPeXxQ16gHLgPpFBnEwTjrf/GNtqHqr4z8l+46bSESxoKAr9P21txWrMZKrpKNPfaM6BaTX5FoBwjsW1gyOVWja4xrA/u1vjhfq4qpHfRk9u2fBr2xpjV11rHZDa6j6ytcrzjDaR4Tet/uWVaQPKoib6XEGBYHXJSUBfUUn6TBjh9WFY3nwfMx6/Oz3FFWe2roPmHw7IFME8HCmGJ6HJQXKNjdcAJo7DeDVWtcrAjop/7Lu216sZT7fpQoLcngEoZErGBMvkbJybQxHW2P0SH1S+jGb7B3sOV88AT4J5ESBE56GlkUWRujKblth3IhdsorlFVHq163dR7DZEMgm50GTznZtkKvCD0J1fwGP7I/v1Cm+3FvMYR1Y6/wxn92VnYWLxG+BZaSRc5MPYFDL51fSHPTwP3RVm1WWZ+9Nh9788X0r42tog0412L4nOMhyp/xfFal3x0xfRzEFTAoL13d+U2FAs935MLQI0XZC+PLjgSuVj+EDKLXUdk3dxWWp1MesjrXnA7hpvFFIRY4k7SU/b7TbHkLFG57lKGrU6M/RiTopjr4BnjzlRWEh5INO6/E3hlY9c0gfcbNKNfzO7lMJpQD0sGziSd5jIWhm8yLm5reqJEg5rPckS6V9pDa5kpguoUedvVq7954KR+9m2yPvv17QwKAhbI5+NhGb8apeBe2yy5m+VJBITL3Hng0LLN1eFhEvOyXqtki7QUqmdPDRz41so5QisNNqc5zciYnBApRl0gIZDbZY54ahvKi+/QaTrggTNmRSHA8dqIP54eNCz9+i1dkCfDOUH4XoZluOY4pgiu4vawZYcGFerYfvScFvXGq7W72JgKR5gOV2yowNmB6pIPLM3VMG4Kq/RpO/8fVlkqs4Z/tc9xXT+rTpsJXK1CfgCp7ajiW94lqkDIAffJTLmEU6QMiJAjJ+SqrxERdRhhhNF6tlNQsS9uWJJ6e6M0WZB8EI2Yh4ntX6uW/K5jxU1ow4KkzvXUmAfxTimy69uEvx+koRBG6LHFZohPSSrw+G4TtUDxCd7zOFzhfGwEc7nY+0BrESSmpnygKpY8xKJv4EBZizfVDeEamjb+CwI1iQwK28jQ/atw2ZlY1GMVm8ecJjoPAZB+HmJLZo3MAPI/6tJhbBLWOmVCFDPQXATGQ5VwyfGD9JZ9SA1O2DogyQ/3m5EgYH6j8X8Y1uePYUzfJbtPhnck7dwbOF8+c+RFDSV3Wlb+sxA/1PS11gQfIs6r2K6wYmJtd7CUW4LVIbFRfsdEhu2K4k4GdG6hKNHMhuP/QLao0ykzhmYMce33OA8XEVy2UgOseD055oRbKyYIgCbfs1bgVTnRYVvlL0Me22O593oeO65s0sGPqHue1oYJoDIQEq5uzGFCMn9Ye9pSG8Szp2BcKS0+RnODYXDtOH6uP+jSc2Relh8uiYOQuYSXGyYpilx9ozwxevCZXOABFNJ7dGbxS9wLldb7oiimobsH5eOBXO3T3DGHkBU4WSlBEO0DqztXL+X6JA3w3FF1gkpuA93zNObE0w1ksaUMSjsT52vOjuCY0/1UygJpYTD5Obiw8n0IiHMsET4uGR0s7XAya84pJg6gjBay94ZfK6VJiTyFPfzI0TIWsMB2qYOnvc3AklVTZRL0I2B8H6c7OItTvFdT8CJ8HHb5jfqI1Q7YO5TaGtCsl15rtwBz/3GwGgCgFOnOeUhHYoKOAypdEpPL1tiwwa8z5Mc1Rd2PwMmpx0YKwoxcGKacdcXYh6NCif1XD7NyPSVZ2O83Zb0AN1BRTO/uQyzeXeYocI87fcMpv40g8dbcvof0xZV0fPtPIO9q2NWkk+xju3uxPzQFtSsWb9Y0sZ2okZJ+zvQOzUPMRgrtl4Ilpz5RJc0dpbw4OLrNRH37l4Npxsr0we+JS0XK+bNRJNts+EnTDsuQp2qVVZXK5TQQIxiQOTAovMGgXBdmlaILIKRFfRABx5mZNXztIROxPtzN2sq0K4/6ZQLvg9khi/T3eEwjN6pWWlkRFdXj7ybkqlt5nrmZ5fBobRyzxJ/l7biuKSMCGyMnCMw/WxsYeFSqv6jpUdyUgAosKhZyepc1UyYN21McUK7HOuIfC6Zu349cmb80/w0cqej3eIp9AXpvNLGmO8gjsxcKTfQ7vy1MQmRSeDx3n+02MgAf2AwnvWZz4l3l9lQ5HDElGcgqjDT5IuMoBov2ZJhAx2Pg33idcI7ok8OCAivHe7eVesNqegM3Yxz2r4PumlXSYD2DAw3PnmJiH4okCgbEX/szg5AJ3rngx3DabpzpEduG864nfqLoBixrA+YD7XhysBK6BH6ThP+I9s1j480kYkEgAvKrVvLlw54ZlO5gg7ROHpqZFoZLZ/+9frFFJkqdZPPquP2ejKN/R2Uu5Foy4hLveUENT3/an1UmKySjoRiG3rxHWLkES+QsDghb/pLEfclll6p2nStgMsXNlSvYmLVhzxQMpeSuSMsl4GqMZFTk9HTBaVOIBQ9ktZrzHHqgxxzU3iV1z7fRRV0aiz7sGN2uH5bFxVXkjNvjrRnqzqM2J4v2qwsW2SGpV16L2C1ZAVLqEyAd8ODEwUpJ6BOprr4TsZp1YoKNm0i7MsF4aa79xSd2Cx4PsG3yKfQbdhJONflDfqGQp7MEv1KMT/ALEv7MvOcnnPGMFT3O4vyv/DcTamJ0hC+n36nwa7HjJQGz5B66P8cQiqA8uJ3stVfBf5LQ95OnGyYLwM/9ekKhzeWImTHeHLMc5G2nn0GIIizeEGgtnJ+u9iBauWzGj1Mkks9a73c3EphsSU9k6Q80qDwFZomh+YUSMJlQ877IlLS03EheZuvqAWNwvYo8EQ4i0Wz5Jmvdxrm3rTUFRuuT9qTvkYCKMH28P6fnRUHFjug96OkHfh8Vz1b2aevJmoYjG8JoyVdPn8YIo1JBDgjQn6L56CyJdL+cKn6YZvMOsXPEz/dOBsSX+1ZSN9LF4+/8PGubLoE+Bc8ucpVS+SyUjGiDj0gPk37F7B+262NvKV9s81bNsKiP8OqeFLlBBy5VmwkxcDcL7gYutUUXyoJv2s4IZDf7h66+fN7uLE4uQ4nHpopSV+koTr0zu8XZdegyCf+IkwExVSDg2qXZHgOuHlqJOTU6FhysrcATBdXQ6BqBF1RwxLF+Y1PnbeJrR584QC3+5KXMrzoBRrMHxm8ugVhxCyHdetQ2SfrP+i3KTM3+vhni8L1lEuT1v7PwZaic2bi8SgaYirjKCEAHsb1RMBEYUyUi82jS0NmhJdPVL1Lhc5VfsEHcRtS0QHS3RxYBknI0TszvqFxVikFkm+gR9JE9q3WYb6lQj1LnvsC6xrusAJAmLGpwu/kRVsme06opjwJLKaEDrxpyMyAoDaieE5Xn5K+d1HRRkzakGnzsJm4vwRD+Tnp5Hhw2wbWaG8vKvSxmijkVUacRPtOXv/O1H0FMGyGkzCoeV/Pju1XuHZ4sdDPdMu5DJZuQYgFrw2nh3JHK+NT+le5afY4r3yfNj/YIgj2iIgGR/Lfv53O8VN2bi7x4VKkYZY/BcBptaB/oOYq52ERfEAxkgBZa+4XRi7xXpxoWQ1qo9/Vx3EA7lt9UNzsaA2cDpFkbsVHOp5T3SlJf+IjLQvkVPYdKgt3xvoOli1bQPWq/Ng6lq4Qn5y3fmlQBYbogexqH9HYWnW4TMI8gwLXK1+C+arO2Ow/iq8WmYm101CEKqkqTusj43e8t2N3cllorEXwpTE8iM0LfK52f9kg38hh9KcYIg5z7njMBdwPvwiDBiqUexjxrIK5kgz+0uAEw1TxBupJUTJiKF8hqK4KIvMlEQMt6yfA05Qta6GvoeDbSRVFyYpnSGZZuEAU4WZSlzAFgp0T9BV+dKW2IQ6O0Wy/sgY5aGPnS03cjKzXgOzpFPSTnqjueNVOD0aRIqL3jJDmdc3y+MDzvnWOtJ1UyASG5dwyAEngXTBrgmnmgrKBicr3W5y+eQVVv0R42eEfqU7VlsnF3iE2iBcPPlay5DZ2ASq3dW5u3Ufmd8zKIB3PBDTRa08/IecCpV4CDdEuKJ19qIDpFM7dI5UpyeCmO3MxN59vSDBpFhfsOpzMHj//Qqh9QrspU4WR2C7uXECiZuKF9+s5cRA0mkl3FmFPl8Z7T4zbyXCvUSCfrE+Uea5lvTehSgx0CDrTaHShSoMjeYFk6EtzFGRfWKlpfL66I6uz7YjeOlDydSEfys0RAHMqxR7Fz1asecif8c2t+diDXcdcnaOjT1/OedTbDJ1q9vBepvKuu1EVNyxJCPnFA4fYfS/0lFvkkdGNEB09OPR5+gZxTShr1N7WMYvCM1QzSkWs6n5skiYTyhpoLsgWExlnqPp02q9A7EymVabAnqHnXh8ft+FKrpWZwQ4Rk5EIbjr8wboG9/b8X2lm5/F1VgUU8xVTVXJQbVFfmQIa07dxZ5xqzQyGZ3p80VX0MUAuUgvAU/vjdhJ3zTOa0of1srH3P8XOvN/erLBTbVpGTyZmOrxD5bJ3bQNfGVnMtFLtZAE4SwXwzsbaleBBGrMTxQHu8ozxc1tJwj2NkYu00J0O8NSCWBvbvVCKkFxBgU63hX7vZjGMKsuNAX8GMFE6RG4jK1cjPtkSgAxgssXpYZZN8Yk1Z3omFby0d5pJEsyxggMDnOHPDN+rWsdazPba8K843n+VIi3DjHQHdZGWr94UevfGWu6E8z0DY/hQXXUvqQ7bU23xXX+ufzQVyLtkRzCFrp9NbvQM6ZC+Sqy0AW0RTBr52iVqGEa1gAO9pvJMzW0ONU0WoItxHeXP8b5PAeyyAxYVWnutFoeR5B1maOnVEP463r+kHiTiAsDiL8vC7+qvG/79xehL5bfiE8OAT82GxPZlWgcpUF1/SfkVP7UkT8yUkZLeGTA1NMPqockRycQKKJaj/RKba6/9sW5DRrWlmTM8kuus5ue44TMkMLG9AcFS1iqUo41Z6lFfkA4chGg+DacqS3R7yWIM1B/6cOZaONZyRLaWl5UkIHmAXlJe1asV1Sb2CuY5RlCKTyLxHvT4fIwzH/Tesfum6Gfx/+XQ9hAOLX79HDGLo8/seqOfjrLjQXYljMgDaNvwJLPcFB7zQ5X78R44DuPBkSciys3K5fqnd38+7UwovHqsgoyogvQgWvoewB3TOQbZ5WBw5KYmF0gjrs81JG5TwVYleBmezgwa5uDrGMCj5YaAKoKRkApKE4J9jgrotGX/fkYFuCEaYlX9xj4uykODMqAq++QAKo9cZ84opH6NGclcY+vudkDYjCZP8JDPUGT/Kz5WsQxh5ZskER63glhxSkRNraVLrzrrXq/Ma2c39E1LDxernIPrUBoOfXeyKkwZHqr4zeenJqPlm0KV5KhgWzib/QiuJvk/qp94hOvKGscYRDtnEbXaDlKNZtnb8ojbAs7HzXXq5NX/n6LdB7N/RfNCwIFLmfq3KivG2PX8Uzsw5Q4YNmrWbZ93Xa59uQdK7driHVUOeenOKsuodLPNlSA5yTSYcvaneCYsC2G5fxdDeLsFuaNr5rist1fL2EbMBWe5hRQG2otF0Jq2QTPQ35nGViQdKlX1HkXPH6Z1ccDdRmulzHq4dI/T6gxmJvvCjQxaSNK89JGgBT6oiDNdecnNMR/83lMM2RZYGZMgUcCmiNDDEMIzNCm7jP5yzLdbq701Ua4f2jNsZFYZUmVbqdvviAqbLKpz0LH7ygq5GL4onHhPIqooeCBB29Q9KCoUwZw0WtTcMHQXPEacOizq3PLwTGCUbAhJMILQWV4q506pr1KxiBwxjZo8UEwi3dKgwug8TVz3epwsWLynl54XTt6LLk5d96HNGTyVid5+4UdK9FhvV5aMoQ/0JGfMXKu8Hgaq5S4NlAj7/VlHKaHpbXqlN4CY4zMpq+0T2MFb/ifJAdrSxtJRgC6PijCe8tTGFKBJVdtMy3O3DetnXpM769e+BZvfqgIzFKKfjjs3X4LO7DZxox7z0rChdNNm76oyaKgCMSLL01ZgSPO6DaoqCxN8bwzwwZTkYf4aRXKniEU984tGTRn2Fm/qA9ihSttiXvxaD9tIChKoH8DW8iIr0flV0BOFjv8vt85zz0qqYixDrYyE/nxSA3kxP+orlKuhby3SzFMPP0ijS3nKD0K7V+7b4+r5gerYvYppSTsN5MT/SNpmNtF9mpRf7/qmzw5RW91PLok31R0AWMT0D9ZLfjVq3HdNBRIV4b/ixjoDDlFukx+kZ/y51EtulLQq41gV35hBBm/sdmwhirpVv0T9WpIwxM6nTL2l2CeKRXmQ+nWlpLBRkRxCHavy+ECOVFrW+IjtIJYUCzCiH2M0yXyzVy26FHa+OliaUzP4+AAymLglDNS2pfN1rX8wv6dS7peUhZ3ZqhKN7ftFU1l3WHG37FXdUlYQoM7NOBMtiDOIrxdh/LwK2YUJVVFZGVl2cNK0CtpymgdIv2KXGXQ8HwCY0wxIuxPYYXsT3rWsuZQ9MB9rJSOWghQE8zN7MSlgMZ3BQRsbbo6HEITVk8YDM3cEzDUTVdiDZ9hT+IL1hTJD5vP733dmSLdA1Zz5zQPwLI4PT10+aA/xx6pXnWjo/HhalaVxJZIit20qtG365jxWnQDcvdSsqbs/kpdpdnMyENW5ALDEFaWYzXqTMrvoIAlsp23YRsh9seLe22KEjwyXxXXIG+yuBjd59j+Oo/46ibg6+oQNmZeGo4NkdU9tvu/iQj5sy53P/CjTFWVJcZoph/6PtSoUT99uvXhsbVtOqZzt0RnNY5+OKuUh+86R/mjFatMeNCrihwl5tbClLdOf0qSobfrviXlUCdlsgONbO8MUpH9b0zbnDj/Snr1G7CWafPk2nEkGjLTjkjm4GpK326/Uymhsl0slG5iSnLguzS+t/6Zo0q5LSjTiFiuw/WjDqhdhtfccCKxkULQroASJYWGjAnJbrNTkUE2nef7ykHCcghr/Y1H4td4mkxQiEVf6zMZunRVfG0qS61kCPhgUnfOIkpKK0q01NJ/K6eVxubU+jfGXnqzYFMekyhaPuApPFYzMA3s4CBSvjwg4wlc7bPlHL8yTg4tISXE1/XC8oEUFQMTM+hECJHFn/8lTjeboVh0SJ2W22V1cPcuynzRJ8t0t3jDPo9EFOmD3UJH7F0UykxUw1qUO0dPn+x+NDcmljL+OhNUU8pxZSz9iNPAUNUctpY9ibk/npr/2DaaTXCMA8WsH/+xETcFPLMZhzvjjQGeAIM9W3wwLh2TaE11nppkXQRF4RF2X0Osq8tJTTvMb8ESeG6RobejbY7Rbs9D8aYAAqIj4q6nX7KQaWxIbIsSkZjwBEtoAKqbDJSDPaw6rlzzkBPpG2Wu2qHxWgrMDsKndkNQo0imAty4qOcj3ntxv3+i63YdEdWtcKPevh9wLTC6/GfFX/0jPN29OW2s5X4mpLXRoDmnzz9/Vwh0PZLfbBX1YhmLIZbUmOZszQsF0rJEXZGVBUJYwY/MCjUEP04gQK+vAgGK/mwjjRz2+FKOv/eRcFfqXIRWPSkOgZGYrF9FDP+yfA7Ro6bFKTqZZgPXg75CUFpuTl0xqCw1DpyX5AwkGQAF7BkwvXt/lVdcHukhzrUoFSvTUJiuUHyz5j9QNNLdswrVgl3r+Dsh0dabY4grvqJFEp0tYNaeMWWk3DOfdnZwhWtY7VxSu6JaxxoNY9TsRzSNy8BEEFAsg/5xgJOF3fTD3XcsXy84y6lORVN+69+aNxWmCJoCddS3iEL8nrEWpatLTrHMEHGiq4x5DypAJAQBlFSFDhyB/vvdIirCa7Z/83JBEMgmB4XndaOT03mVm4Or6S4ljYyhMhC2bk/FT5MBmHZZLdrhIupiKM41iTudhfXjJ7JbjhoX+kpE3H+Z8wC4ljG1dAG6tcNIhZcv79ZY9p3kc7X9D5P64q5MjorHYPW9QO3dNUEdQZqEy3SadqzdghWHV2jA8zLU8fKjQg7i98frjXqEeeq1LnhDi+J6zXhxOHHprXcg3N632WRhnUjGdGNhr0bwh/cUr6e7dhD6aaG7dnpWYveV0D6UQZnpcBX5BGEQqDiCbe/mV+qMFyCAkXVuvA0ORow1Ou5M3Bu4ziWVSHRfGbzF2qXQcag2I94f0mo/dHzrlDdeybeaKKHvWDQIiu9/V/k/elYJ44zUmbAA28EhiMl2JEFkc4H8TM0vHqM58Tj9rNp22vRE9KnHi4agJJXM7AgOhE5LDhAedPsg7/3G8HWnMMQcgeZ1e5cBrJMxI9Dz+04N6ValnXwzV0Rv//5iAYzfDvmK7+cVtSxeFjAKS4eH1WDw0DBYXJyiat3C+xAt0klnar22VJ5ZAPV3xqCeX51wJCmOwy/mlccJDNulQ6CeT96AIh4QUO8zqhgonVy6BywPgix+LoQ8O3j+y9esKQ2wpfn3889ltua+C6zOwPwbVfVqvdcTh+2+wYIbKvoJduHPEIUOxr4B3mo2Xj9+hN899RjBrTxmOeSqp4yh6imBgWvb70RTzFiKeZxu+cwZMZsjFjOJBkHREHtlhAeV8yu5XBDO4+P9zlNDlCryfnHSNIzkrIB2WNzsyZ4CYdlGzYVS2CWCkInVfaaXSfZmauCjd4zhNZjuXMOFYxuVFdPlURl1yY5Fr1wQ0FEyw3FrnHv5W1xF5QiwHLZ0EMgkOee2UneBiZqIwYcAcLXujNJDjynrSfGlypM7qZawRUkEsBQuX7V13x8ygrkpBOeZZLnG3NfeKLI8mzaFHhbrrJYswa1O6R6UlmLOIn7v1p81hiQiSxpuKG7ddmRTekGuulpRHCr7iuV/40t7D2MZaIvR/PGY5RBK1xxvPKrQMKUGF5KcMcV0hFSTY4GaV5BnSBieN2AaR+q1MC/LyJ6gxc+rNhJtuCK547yays8WFUe+PHZVFkgWfePb4iqxJs0O6b/ThuS9G9kSxCpFrYa5lOON7nwBg078d+M32e8C2UmiPv6ccI2Ejgwob+QR6LyU7o9QpQBVNrNNQacVe5n/SYshOfQfDbJMc2avc+pHNGBdA16LJGTRa5yT8pheCJF/LqU1ST3qVIeVf4g+BKj4C0EZp6LS/Gri6oOsYxTQD3HH6n4sPTBmRTN9cLkoD2PTm5hnhEUxPctp8ThKh3ENdDH5fIXzW3qQJEoXvK6USXS81NX0ikfbOYzWaxUZQwlEawJD5wdflVkgV1QUMjEdaU7KnutuxVgfVxsMhlJvVobtATppL7cItoud1CaG7CzWuKv2OaIu5PXeI4NYn0NNkOJUNMFAs0nX43f4HLXxD9pZK11Locfg8YKmvA0NPdsQAGIszUcSwgEjuDkRp3oCll1X+cSTnryyxnkHOC9UyvHhS9piFvslJRQwV5Fh5tlT7LoXMEoeFzB4bj/XSHjBi1GtIHJlo83bk4pZi0kohNYHPSXCPAYOICTqFL7koMTSs4aHEfVpA3At7HMx53AXGyhxiqRg/ta81rTIMb1hTJNuT8QVmniGAgXV1WYXAEabOCZeYIORrWlSXujDNeR61Wo8hK5hWu3QBCSM4tIZ+iULaaBlMxl1Oxv7DKB/1NJgLL1fr7t90IASDJqVXRiwp/CEpU44P7vSyXtMbNbydQRWs8hkgBIu9tRmCSGCneINnbGSHnKTE9vqI2YHYKYfs1H3dYPak2D3nGR1WGuYK5JdQVydPrMtb0EmGSKu4GN2FQJMNg/yOsaPcmkqp6T2x8W9mbKw9TW6PSVRya2sWeYj5V98cn66QT9elkT72Xqj7uSWGFWo5ES2yJIOB4GKdoL+si/O7n8IlFsY/2i5pVk0/+flu5Nx/tGbpS6gBNNl2K+afCEMuIK1VzyJfWGTE5iP9AbYLlJ08HbHil4uBopd2GkKp1b7yw5MXRYto5gieQm1J8/IEwXu28CD32zZYzTS5ext1+HzdlpOpIoRO5Qo4vuc6jycNIVxYkpATzSnSIKwn+cfu3h0aenrgACmdOD79QGbwmyFMpLkMYuubdcwoqXPEg5TU8nHkNFxRYcd70b3QXI8REIR63h2nU0hnCQuvLRtPoS4SyEP7aESPYdzEUjrtdzWRMD+dRmqbOn2LxgJbfL/UJc0CjhwXSK4FcgXysImorKBbKn8a659tnQq6eqxYz1gInWBao9GXTD7gNduR2gWFcby+zOg6qemMEPiXLOopCaBfm0sOIvpWczotub1nwfphQi38qJgQhqUT3C9i8c3J97glRV61WEP86w6nni986tykax8vPH1uHQZZtQz4rD5lBbPB5KcAn0Ld6DPwsDxmV3DmpUJo3tu5qSBf53er3sx1pFu2PFqnPnzJK/qZgTH7aqZFKvxSC5fxOFGuznZhHf6dHd9HV90qyZkeongNyXeOYN/sGhKqi2orts5L2eUfugv5eTqHsbTFyVLV9hxIUDGFJY3UbU+jIS1jq8Y5xky0gWjvvlScmt9yyp64YeWYPdDYHbHt4mKNO3QMbWIi3OPx4FtPvCHWHoGJxFFTCT62ajPJRaVztvd76kOOq6E6yokxSyForfu7MiAGQQsnjsEQ1wumhF9NoW9nIyE5oD6jGtPYVdLz8VMV49Al3xO3+NbTseWHcKmUjxFsIL39OphgxcpOXcXMEO1ZIrsa6mgIKb8xIVlpmd8fNja1/sxxkMrKI3PGRGmIbwp9xYcwcUy62N8tm+0nfLt39ddWeiwWaeGKQBeB+mhh23ZRyUHZ4y9GMj1w6YCgxjVPptdeyHBzqvjC2JS2Z5lh5Zlo0vlrTirCfSFNfipGKDbroRsLElHdATVX0Zp3QcwqIJszew+CBDVca/0/IhKr0GwlhhR8aUuYaAmEuch0rF5F+pSM2TwsvFmecY1UfKY0OvrIt4RNfNVRnmAjzwKJGK72HS798BEs+6BzY94mWZYLzDg6eK63FdQfJ4ntXlljighsihF7Y/EnwuMjaZPjep7GwVPg8pR73yYNDVFFpeEH8nodYFcDxTidU71QRYzz8y31ayy1w5oc0xZTAsgdLvSOwpMysr+C76RylaXTUAWkeBhLYrrovvWHxoTvXXRTIvvENBuRbpVIAiUNO6iGsXqN/GmtZvwS7sJtxhlXlKdQMj4yUBtlOuKUQiEnbuIvo0DheipYEKWkeki6edSKPPnh+9g8raEkiAndvW9hLdioJi3HW7X/nOzYPXiAxHvbqCNtEFAxI/dhb6gm4/kl7ap2A4+PzB7OPmLX38pp2+PgZ2Jx2o0LEZQy9pbrGfO+YA1AYn26bOl0FaCxLAsz98kfvySsNvukD9n0KhMI2RGVCttDVtktBQqH4CHbODtfbinhYGJqidE8WG/L+U5pafkM7zUw8Yz/sYVj4ZOzsq3LrtCNEbC5C1SqZkf1HiRrdhREkzpBZ+l/QGYWYaYXRwEyGe/uU1+qhmwoGMwjLrW78syLwyoTLNUge4jSJ5W07cDNL28eGtvUGJadMyEaW8SJNy7MEQU1PbkOXB6YormgGrUet8iarbYFB3mtI/GJZciRH2dxByzF8y5FXr2PSNIakY912/I15YWfG8WyI/MIHcisOtEZjcDeIiFS/0pEsS3ke6UuKSj/NyXb6PEyhK/Fz4KZhxLOngMVIbPR92BZ3nvhp0FenVEElo/4zPomiWoeA0dLSLOqRz03bG4urYpxJRbvVNfleLBXuyb+5x6R/XDNkQLBMLZB0rLB+r6RC+4i/KTgfWEX2WbMWMhnQBz9Vcuxq3jRyVfWn1dJHoV/B/BAKqBnCaHacOaSF35sITw/jl+JaqhtyFRjkVpgmKESG7dRC0QG9SHCuZwr5wipwwWOa4yU9+y0RFN+L4ECphlV0SLZm7eHjH2OlrxhhXnqjZ2RKiTuvS+70xPl5ixGscDrx8KsNLkgfqg718GgTQBDjLnFvKvlNXFnvI6BJuLLUdjPcRgs7JUZ+3+CMPw8huqZ3p/+3wWDywZJ6J0mYya87M/g3E0XSydYtvF1CnP4SFhq5eQhPHc8iRF7DCAM1dZelPkUiAg3W6HnGdXy/Ehioo1CHDXlKIFObTrFeQl1M539sDNBHHnyWbp79vMr+L02WzBg+aI+gcB3jKk7VdvBLW5EW0xbAovmQU1Nvj2Fpa3SkkHNuOowebS6L6v7tyF5fPbE4xUxxD/eIIpF8YncWpdpnOYJb0S9pHEQyYxWdSYGOaRkQe2QlsdrFFpOCr6MYutpaaQVnFr4vb08U4xKai26AhUutxWvO91+bi18v23KWhmpqTHKQrgBbOMSBTL5wo1zH1mf+E2JI50E2wiPNviVb9xB79TCjTK0TEUN0g5xCniq7+VlByOGrxWkRE94AvvOV5lXAttRsZXqucHlsoATMS4BVPhl3SxFmg1NQOLm88jUbuUKa/7HKocKfSCIxy5MloHKYzD/V+AjVOEjpvNzoBFFFYCZHvtikTAK9fdWTRRKHgWZqtId4JBz9LDPHHwoliSzNV7M+U2aAt6Z8rZgMvkq6HJ3jVBtYQrgRYniun8Ys7h5H5MjYeDlWjEPZ+UeGR38FFzY67Mo65F4PyPZhKInBMGf/JhONW5zxJBDlEE5L5YnOKyirwN5+bD4X4oPj5V8g3QQk15CN3+CcIcvPin9nexzfE5LSeFmOgitDZXE/Fm8gD3lXspGopFULjO7/Z1mrwRw1hPeTp/vDZZMKIJLaLKMTsl+CDnOSemYLO8vXaKfHo10rloa6ESA0Ha19NybZQ5esS/nY4X+5sYsWwDYzVo2Sp3wMk+cOCzDYAnym85h21blc6sElgu8m66xJiGqqCeHc/OAxwHy01GvbAMPZIIgE7bzkU/N/nshtFiavYVLIEYFN1oqN1CAEXJgTUjD7wZFIYa+pYaAjkMo/dBypugs/2fiRvY1xAgNzEHIyA6p+txQfECue23Ugd6Xt0iywwn8zHoGI7EeF9MUd9bHQ4PTFGdQkcwp5XZSSlGxqbsHtePhq8w1EMRKgJWLG41GQzcguWJzmaA6U2Av4msgj7qbjoEvr9ZeXZg7soxYjoguyVyq4B8YLhloIC+/qYo/w6KrOIYXMe/oBRlhizOhfWywFpQ0D0qZ7HNZrqHXV/eUzRXWISoSgQkt8h32OO4HuVuGl4odUmuyOWGnquaomP7EJCZB73bUiuyTWk3PV7OpBlDmfmW5pLzeCymtjXdo0ppt2f8Zzh1Ip9G7ani63HgOsZ9wkTgd2vOtQH+hpRF5pFGkGbhSgOlzh5NEWh4297b7NnnRy+QrKgrRhAbhig4JFQxdKBUyOPZuHelRUuOg2u80mZ10oQCliDEpIdp60/Zwa8u9/CbjNUx/S5MPW4BzM8WoAVFE+gAAkKCltvQ7mWalwW5UAT3EY1vAoYBrRvmr384QM8sY/7ObH8AR5wLvsPKoTpinQO3d61Ptc/gxYFeG9F4GQHOyLPsuWqgprQH5bjWbN6X1xIESj4MLs02VCE5NSv2NE6nCEo++b4hnweRn/YCRvuckvhyNcGbO2UJ5Z3wS7d+YU7e15OicycaKFjtiYKn1niiilOTCKVlfwpnpmGON7pRGTTz6BvYyf2MewEiMdKGzdF4b50u1N9Odtg0lpZxhTlbklJUIa8GTkAS7gjowslU90GCtIvtotYbuLv7y21Cq0hnnyatAF6/Z8EFoA9zqmYz5E+88Pcz2HuwfD9NqnZuCTcs5telqcgJ4pRQ+YInPwN2yNoRW0FmczSqnvSIlRCf5g4R0bEmTTHXApAU2Qgq0mydNQPi6TroKGFSsiqnxixntbOnI0x5c87AbHWv4AI5hGeBP5b1Eb93qty74fTHiDr00YT7hXtsr3e7otHyz/29TziVMF8XejSkSFpr7vpps0JZDdOQu82X9mYojl9sMVK3vpmDFeRM/VzsEVDdPCpxqxtYXvTObLkkhirNm0f4kDhjYyH8aMTVQC7tgbKWcBwPpJtiGnP1TDPqyerm8grvYqKUKmPtS4W4I2r30mRrOyje7JURHKW/wMx0Ra7IboB/D+5zNovI0MlZHSxoIPiKjFZaf7PZ/eGG+V3ITUeTD1pdRtPjPDWidoGizHsUeCmVYdOTGPJsLXeoJ2j41/hM2TlDVvjp8S2i2hYcgYflpNMn/gbaLQPyxVcGM0v7oaDj324q3BlZq9hvjE4hpy08b0wzh79IujA8kViSknYfgrLPQys+KB7SLKF0mJd3MgfM41PDzXEVXhsHj+UKbr8iyBU7ntWARtL6lQLHTB2TNcQupk1Wki/zwXTgqhFdnAYY7Y7xR13ibJPnq1KmWebh3l5TeOKeyartd2sUNPuPqGXnQbh7rU48oE+lOXYWRAfWOunZg662g84cQUTju6Qlf2fGTTIGB6Y2B8er7Efmlv7ebrAzxOP86ARo/r9xk+bX+zEJXuMCITtDee+O7dYYl7mGVVI7uL3MrQmigdctsV+ul6IkSGCLJh1IwtslZHjzio+0/39lq1TGFvXE/tiIwfBufAFqs9nDsrBe5KeZ0tDMd5YST0JEvbcfwd+N50fGjtg1Wj2RTPivBnMJqt0ryzSpqgcG/k1/W6vWy6r7Kr5tpCk/vIaC3AfvnbFr/JMVCYYCpg2Tmu0k3QAkdVuSQYEH8p/QFsyIeGJrXRTRyu+DXhN3/uxFlex+ttV1OUeagxcVhjOCNcM4nvezjRnMjntXDMHtmoD0ExW1Tb/NYtmlMeMMutUOy96zkg0jY4aDCgj2YIt/uzmGg6PsULD4rl4WmZSijpLayjVJWX2KljibF+6mPzHqTLJClQXG5euHxLvbfJZP3r7twT9+x/t7mbQ27LrdEat3N5Xqp1BtH1P4uLwPHBeaosVuMN4MH7a4P2uKT0hHeSZR09VXKTvQT6u+aFTp33RaHq8ODAqy325ZEeMMJo3k+UslIZyWhr65uUBKYnebYyf2PDhmSf4eVy26hPkgaaBW8b2veErGoJhK/BVG2NjbPNznhRPeHOIrXWitJqv21lqqOu7TZDXRY3FyYLjc/fBw8WBQzZ3e9Z3HVxEBJswA6ZaEUXJEHHnvoj2FmqWZ0noaAm/3Xnkb/j8F01douqeteW5IvM0AjE3wBJnABIygiWc90y6vAG116CZ7mUUhqk659MHqcNoRC1BnGr8fp22LzIAvc3BHJGKfYaDpc7/woLa7Fx1DELV47jxYywU7HMa+xZHZLGoHo4Rlqc2SSjNo9VyUFhLOiH3iwtmstQvfSV9BO0T6Ya0nUKqpXiXql1kC0HXss0UV24TrVr1DIaliSHiHnXpF355Fkjehgws7JOQ6Z0aHZ2avvLwXKV7y4FBBFLfHRcQrXPA/5I1suyDCfhVQgJCGsDlxew1TdWO5NjvorIw0KcFLh05OgZDXfLPglzr9gabJX2T9LCZ487EHbM+06fIiVv9+QwQtp/CNo12bFq/im7Ea28dOwBOxf7isBYpIhmaEnGVXc8vKVbWoT7uGnGY5gFj7hB+ylp7X/I8VTyBmy+X9WarIY5xKCL+ekhZGeR9DLs0WfL3V6pkulYNcH9b0GlkK6UkTQjBJuvnPxCyvnWc2R2DQIgZ9q+0V2ftLAo=
-</div>
-<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
+        <h1 id="如何像使用EEPROM的方式使用Backup-SRAM在STM32F4之上"><a href="#如何像使用EEPROM的方式使用Backup-SRAM在STM32F4之上" class="headerlink" title="如何像使用EEPROM的方式使用Backup SRAM在STM32F4之上"></a>如何像使用EEPROM的方式使用Backup SRAM在STM32F4之上</h1><h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a href="https://stackoverflow.com/questions/20667754/how-to-use-backup-sram-as-eeprom-in-stm32f4" target="_blank" rel="noopener">StackOverflow</a></p>
+<h2 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h2><div class="note default">
+            <p>There are two ways of emulating EEPROM on the STM32F4:</p><ol><li>On-chip 4 Kbytes backup SRAM</li><li>On-chip Flash, with specific software algorithm</li></ol><p>The second option is described here: AN3969.<br>But google, unfortunately, hasn’t been able to provide information on how to use the first option - using the 4Kb of backup SRAM as EEPROM?..</p>
+          </div>
+<div class="note warning">
+            <p>  The 4-Kbyte backup SRAM is an EEPROM-like area.</p><p>To retain the content of the RTC backup registers … when VDD is turned off, VBAT pin can be connected to an optional standby voltage supplied by a battery or by another source.</p>
+          </div>
+
+<h2 id="Configuration-Steps"><a href="#Configuration-Steps" class="headerlink" title="Configuration Steps"></a>Configuration Steps</h2><ol>
+<li>Enable the PWR clock<br><code>__HAL_RCC_PWR_CLK_ENABLE();</code></li>
+<li>Enable access to the backup domain<br><code>PWR_BackupAccessCmd(ENABLE);</code></li>
+<li>Enable backup SRAM Clock<br><code>__BKPSRAM_CLK_ENABLE();</code></li>
+<li>Enable the Backup SRAM low power Regulator to retain it’s content in VBAT mode<br><code>PWR_BackupRegulatorCmd(ENABLE);</code></li>
+</ol>
+<h2 id="Sample-Code"><a href="#Sample-Code" class="headerlink" title="Sample Code"></a>Sample Code</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">__HAL_RCC_PWR_CLK_ENABLE();</span><br><span class="line"></span><br><span class="line">HAL_PWR_EnableBkUpAccess();</span><br><span class="line"></span><br><span class="line">__BKPSRAM_CLK_ENABLE();</span><br><span class="line"></span><br><span class="line"><span class="comment">// Set data from backup SRAM.</span></span><br><span class="line">*(__IO <span class="keyword">uint8_t</span> *)<span class="number">0x40024000</span> = <span class="number">42</span>;<span class="comment">//magic number</span></span><br><span class="line"></span><br><span class="line">HAL_NVIC_SystemReset();</span><br><span class="line"></span><br><span class="line"><span class="comment">// Get data from backup SRAM.</span></span><br><span class="line"><span class="keyword">uint8_t</span> extRequest = *(__IO <span class="keyword">uint8_t</span> *)<span class="number">0x40024000</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(extRequest == <span class="number">42</span>)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// Compare yourself.</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -612,8 +603,8 @@ U2FsdGVkX19ikiMNYEyMsckHwG2HG7p2AJNnjbsoToF7vLu2If4tuftRB8KzQmNYo5Un5VCqetBM9cj8
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/02/c-sharp-work-with-ironpython/" rel="next" title="C# 利用 ironPython 呼叫Python研究過程">
-                <i class="fa fa-chevron-left"></i> C# 利用 ironPython 呼叫Python研究過程
+              <a href="/2019/08/19/WorkLoad-Server-Settings/" rel="next" title="WorkLoad Server Settings">
+                <i class="fa fa-chevron-left"></i> WorkLoad Server Settings
               </a>
             
           </div>
@@ -621,10 +612,6 @@ U2FsdGVkX19ikiMNYEyMsckHwG2HG7p2AJNnjbsoToF7vLu2If4tuftRB8KzQmNYo5Un5VCqetBM9cj8
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/08/19/WorkLoad-Server-Settings/" rel="prev" title="WorkLoad Server Settings">
-                WorkLoad Server Settings <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -675,8 +662,17 @@ U2FsdGVkX19ikiMNYEyMsckHwG2HG7p2AJNnjbsoToF7vLu2If4tuftRB8KzQmNYo5Un5VCqetBM9cj8
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            本站概要
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -842,6 +838,23 @@ U2FsdGVkX19ikiMNYEyMsckHwG2HG7p2AJNnjbsoToF7vLu2If4tuftRB8KzQmNYo5Un5VCqetBM9cj8
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#如何像使用EEPROM的方式使用Backup-SRAM在STM32F4之上"><span class="nav-text">如何像使用EEPROM的方式使用Backup SRAM在STM32F4之上</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#References"><span class="nav-text">References</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Motivation"><span class="nav-text">Motivation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Configuration-Steps"><span class="nav-text">Configuration Steps</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Sample-Code"><span class="nav-text">Sample Code</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -1017,9 +1030,9 @@ U2FsdGVkX19ikiMNYEyMsckHwG2HG7p2AJNnjbsoToF7vLu2If4tuftRB8KzQmNYo5Un5VCqetBM9cj8
 
 <script>
   var disqus_config = function() {
-    this.page.url = "http://obsidian.synology.me/2019/08/05/Secure-Element-Check-Procedure/";
-    this.page.identifier = "2019/08/05/Secure-Element-Check-Procedure/";
-    this.page.title = 'ATTEC608A來料驗證';
+    this.page.url = "http://obsidian.synology.me/2019/09/05/How-to-use-Backup-SRAM-as-EEPROM-in-STM32F4/";
+    this.page.identifier = "2019/09/05/How-to-use-Backup-SRAM-as-EEPROM-in-STM32F4/";
+    this.page.title = '如何在STM32F4上使用Backup SRAM(like EEPROM)';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');
